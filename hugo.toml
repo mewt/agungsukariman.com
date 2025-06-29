@@ -1,0 +1,60 @@
+baseURL = "https://agungsukariman.com/"
+languageCode = "en-us"
+title = "Agung Sukariman"
+theme = "PaperMod"
+pagination.pagerSize = 10
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  author = "Agung Sukariman"
+  description = "Personal blog on digital marketing, SEO, and tech"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+
+[params.homeInfoParams]
+  Title = "Hi, I'm Agung 👋"
+  Content = "I write about marketing, SEO, and building sustainable digital strategies."
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  disableThemeToggle = true
+
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+  disableThemeToggle = true
+
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 3
+  disableThemeToggle = true
+
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 4
+  disableThemeToggle = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params.assets]
+  disableFingerprinting = false
