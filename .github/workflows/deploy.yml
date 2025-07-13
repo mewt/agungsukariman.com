@@ -1,5 +1,3 @@
-#Every time I push to the main branch, automatically build my Hugo site and deploy it to my VPS.
-
 name: Deploy Hugo to VPS
 
 on:
@@ -11,24 +9,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Important for Hugo themes
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-    - name: Build the site
-      run: hugo --minify
+      - name: Build the site
+        run: hugo --minify --gc
 
-    - name: Deploy to VPS via SCP
-      uses: appleboy/scp-action@v0.1.4
-      with:
-        host: ${{ secrets.VPS_HOST }}
-        username: ${{ secrets.VPS_USER }}
-        key: ${{ secrets.VPS_KEY }}
-        source: public/
-        target: /var/www/html/
+      - name: Validate build output
+        run: |
+          [ -d "public" ] || { echo "Build failed: no public directory"; exit 1; }
+          [ -f "public/index.html" ] || { echo "Build failed: no index.html"; exit 1; }
 
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.VPS_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS || 'github.com' }}
+
+      - name: Deploy to VPS via Rsync
+        run: |
+          rsync -avz --delete --progress \
+          -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+          public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/html/
