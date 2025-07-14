@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Important for Hugo themes
+          submodules: recursive
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -34,8 +34,7 @@ jobs:
           key: ${{ secrets.VPS_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS || 'github.com' }}
 
-      - name: Deploy to VPS via Rsync
+      - name: Deploy to VPS via rsync
         run: |
-          rsync -avz --delete --progress \
-          -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
-          public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
+          rsync -avz --delete --progress ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
+
