@@ -1,35 +1,62 @@
-name: Deploy Hugo to VPS                                                   
-                                                                            
- on:                                                                        
-   push:                                                                    
-     branches: [ main ]                                                     
-                                                                            
- jobs:                                                                      
-   build-and-deploy:                                                        
-     runs-on: ubuntu-latest                                                 
-                                                                            
-     steps:                                                                 
-       - name: Checkout repository                                          
-         uses: actions/checkout@v4                                          
-         with:                                                              
-           submodules: recursive  # Important for Hugo themes               
-                                                                            
-       - name: Setup Hugo                                                   
-         uses: peaceiris/actions-hugo@v2                                    
-         with:                                                              
-           hugo-version: 'latest'                                           
-           extended: true                                                   
-                                                                            
-       - name: Build the site                                               
-         run: hugo --minify --gc                                            
-                                                                            
-       - name: Validate build output                                        
-         run: |                                                             
-           [ -d "public" ] || { echo "Build failed: no public directory"; e$
-           [ -f "public/index.html" ] || { echo "Build failed: no index.htm$
-                                                                            
-       - name: Install SSH key                                              
-         uses: shimataro/ssh-key-action@v2                                  
-         with:                                                              
-           key: ${{ secrets.VPS_KEY }}                                      
-           known_hosts: ${{ secrets.KNOWN_HOSTS || 'github.com' }} 
+name: Deploy Hugo Site to Biznet VPS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive  # Fetch Hugo themes
+        fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true  # Use Hugo Extended for SCSS/SASS support
+
+    - name: Build Hugo site
+      run: hugo --minify
+
+    - name: Setup SSH
+      if: github.ref == 'refs/heads/main'
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/biznet.pem
+        chmod 600 ~/.ssh/biznet.pem
+        ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to VPS
+      if: github.ref == 'refs/heads/main'
+      run: |
+        # Deploy new site
+        rsync -avz --delete -e "ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no" \
+          ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
+
+        # Set proper permissions and restart web server
+        ssh -i ~/.ssh/biznet.pem ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          sudo chown -R www-data:www-data /var/www/agungsukariman.com
+          sudo chmod -R 755 /var/www/agungsukariman.com
+          
+          # Restart web server (adjust based on your setup)
+          if systemctl is-active --quiet nginx; then
+            sudo systemctl reload nginx
+          elif systemctl is-active --quiet apache2; then
+            sudo systemctl reload apache2
+          fi
+          
+          echo "Hugo site deployed successfully!"
+        EOF
+
+    - name: Cleanup
+      if: always()
+      run: |
+        rm -f ~/.ssh/biznet.pem
