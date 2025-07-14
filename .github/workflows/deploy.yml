@@ -1,40 +1,35 @@
-name: Deploy Hugo to VPS
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: Build the site
-        run: hugo --minify --gc
-
-      - name: Validate build output
-        run: |
-          [ -d "public" ] || { echo "Build failed: no public directory"; exit 1; }
-          [ -f "public/index.html" ] || { echo "Build failed: no index.html"; exit 1; }
-
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.VPS_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS || 'github.com' }}
-
-      - name: Deploy to VPS via rsync
-        run: |
-          rsync -avz --delete --progress ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
-
+name: Deploy Hugo to VPS                                                   
+                                                                            
+ on:                                                                        
+   push:                                                                    
+     branches: [ main ]                                                     
+                                                                            
+ jobs:                                                                      
+   build-and-deploy:                                                        
+     runs-on: ubuntu-latest                                                 
+                                                                            
+     steps:                                                                 
+       - name: Checkout repository                                          
+         uses: actions/checkout@v4                                          
+         with:                                                              
+           submodules: recursive  # Important for Hugo themes               
+                                                                            
+       - name: Setup Hugo                                                   
+         uses: peaceiris/actions-hugo@v2                                    
+         with:                                                              
+           hugo-version: 'latest'                                           
+           extended: true                                                   
+                                                                            
+       - name: Build the site                                               
+         run: hugo --minify --gc                                            
+                                                                            
+       - name: Validate build output                                        
+         run: |                                                             
+           [ -d "public" ] || { echo "Build failed: no public directory"; e$
+           [ -f "public/index.html" ] || { echo "Build failed: no index.htm$
+                                                                            
+       - name: Install SSH key                                              
+         uses: shimataro/ssh-key-action@v2                                  
+         with:                                                              
+           key: ${{ secrets.VPS_KEY }}                                      
+           known_hosts: ${{ secrets.KNOWN_HOSTS || 'github.com' }} 
