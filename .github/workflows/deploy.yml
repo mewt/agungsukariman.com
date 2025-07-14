@@ -9,56 +9,65 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        submodules: recursive  # Fetch Hugo themes
-        fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+        submodules: recursive
+        fetch-depth: 0
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
-        extended: true  # Use Hugo Extended for SCSS/SASS support
+        extended: true
 
     - name: Build Hugo site
       run: hugo --minify
 
-    - name: Setup SSH
+    - name: Setup SSH Key and Known Hosts
       if: github.ref == 'refs/heads/main'
       run: |
         mkdir -p ~/.ssh
-        # Create SSH key file from your existing .pem
+
         echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/biznet.pem
         chmod 600 ~/.ssh/biznet.pem
-        # Add host to known_hosts to avoid host verification
+
         ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Deploy to VPS
+    - name: Test SSH Connection (Debug Step)
       if: github.ref == 'refs/heads/main'
       run: |
-        # Deploy new site
-        rsync -avz --delete -e "ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no" \
-          ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
+        ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "echo ✅ Connected to VPS"
 
-        # Set proper permissions and restart web server
+    - name: Deploy to VPS with Rsync
+      if: github.ref == 'refs/heads/main'
+      run: |
+        echo "Starting rsync..."
+        rsync -avz -e "ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no" \
+          ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
+        echo "✅ Rsync completed."
+
+    - name: Set Permissions and Restart Web Server
+      if: github.ref == 'refs/heads/main'
+      run: |
         ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
           sudo chown -R www-data:www-data /var/www/agungsukariman.com
           sudo chmod -R 755 /var/www/agungsukariman.com
-          
-          # Restart web server (adjust based on your setup)
+
           if systemctl is-active --quiet nginx; then
             sudo systemctl reload nginx
+            echo "✅ Nginx reloaded."
           elif systemctl is-active --quiet apache2; then
             sudo systemctl reload apache2
+            echo "✅ Apache reloaded."
+          else
+            echo "⚠️ Web server not found or not active."
           fi
-          
-          echo "Hugo site deployed successfully!"
         EOF
 
-    - name: Cleanup
+    - name: Cleanup SSH Key
       if: always()
-      run: |
-        rm -f ~/.ssh/biznet.pem
+      run: rm -f ~/.ssh/biznet.pem
+
