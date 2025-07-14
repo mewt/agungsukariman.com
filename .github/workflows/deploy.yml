@@ -39,4 +39,3 @@ jobs:
           rsync -avz --delete --progress \
           -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
           public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
-          rm: true  # optional: remove existing files first
