@@ -30,15 +30,11 @@ jobs:
       if: github.ref == 'refs/heads/main'
       run: |
         mkdir -p ~/.ssh
-        # Create the key file with proper formatting
-        cat > ~/.ssh/biznet.pem << 'EOF'
-        ${{ secrets.VPS_SSH_KEY }}
-        EOF
+        # Create SSH key file from your existing .pem
+        echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/biznet.pem
         chmod 600 ~/.ssh/biznet.pem
-        # Add host to known_hosts
+        # Add host to known_hosts to avoid host verification
         ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
-        # Test SSH connection
-        ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no -o ConnectTimeout=10 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "echo 'SSH connection successful'"
 
     - name: Deploy to VPS
       if: github.ref == 'refs/heads/main'
@@ -48,7 +44,7 @@ jobs:
           ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
 
         # Set proper permissions and restart web server
-        ssh -i ~/.ssh/biznet.pem ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+        ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
           sudo chown -R www-data:www-data /var/www/agungsukariman.com
           sudo chmod -R 755 /var/www/agungsukariman.com
           
