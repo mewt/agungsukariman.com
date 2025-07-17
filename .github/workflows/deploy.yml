@@ -1,16 +1,16 @@
-name: Deploy Hugo
+name: Deploy Hugo Site to VPS
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v4
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -20,13 +20,13 @@ jobs:
     - name: Build Hugo Site
       run: hugo --minify
 
-    - name: Deploy via rsync
-      uses: burnett01/rsync-deployments@v1.1
-      with:
-        switches: -avz --delete
-        path: public/
-        remote_path: /home/himehime/agungsukariman.com/
-        remote_host: ${{ secrets.VPS_HOST }}
-        remote_user: ${{ secrets.VPS_USER }}
-        remote_key: ${{ secrets.VPS_KEY }}
+    - name: Deploy to VPS using rsync
+      uses: easingthemes/ssh-deploy@v4.1.8
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.VPS_KEY }}
+        REMOTE_HOST: ${{ secrets.VPS_HOST }}
+        REMOTE_USER: ${{ secrets.VPS_USER }}
+        TARGET: /var/www/agungsukariman/
+        SOURCE: public/
+        ARGS: "-avz --delete"
 
