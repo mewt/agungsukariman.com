@@ -1,5 +1,5 @@
 baseURL = "https://agungsukariman.com/"
-languageCode = "en-us"
+languageCode = "id"
 title = "Agung Sukariman"
 theme = "PaperMod"
 pagination.pagerSize = 10
@@ -12,7 +12,7 @@ canonifyURLs = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowCodeCopyButtons = true
-  defaultTheme = "dark"
+  defaultTheme = "light"
   disableThemeToggle = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
@@ -20,6 +20,7 @@ canonifyURLs = true
 [params.homeInfoParams]
   Title = "Hi, Saya Agung Sukariman"
   Content = "Saya adalah Digital Marketing yang ingi membagikan unek-unek selama bekerja di bidang ini."
+
 [[menu.main]]
   name = "Beranda"
   url = "/"
