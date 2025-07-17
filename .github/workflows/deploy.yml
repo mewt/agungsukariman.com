@@ -26,7 +26,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.VPS_KEY }}
         REMOTE_HOST: ${{ secrets.VPS_HOST }}
         REMOTE_USER: ${{ secrets.VPS_USER }}
-        TARGET: /var/www/agungsukariman/
+        TARGET: /var/www/agungsukariman.com/
         SOURCE: public/
         ARGS: "-avz --delete"
 
