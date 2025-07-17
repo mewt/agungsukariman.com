@@ -18,32 +18,32 @@ canonifyURLs = true
   ShowPostNavLinks = true
 
 [params.homeInfoParams]
-  Title = "Hi, I'm Agung 👋"
-  Content = "I write about marketing, SEO, and building sustainable digital strategies."
+  Title = "Hi, Saya Agung Sukariman"
+  Content = "Saya adalah Digital Marketing yang ingi membagikan unek-unek selama bekerja di bidang ini."
 [[menu.main]]
-  name = "Home"
+  name = "Beranda"
   url = "/"
   weight = 1
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "Tentang Saya"
+  url = "/tentang-saya/"
   weight = 2
   disableThemeToggle = true
 
 
 [[menu.main]]
   name = "Blog"
-  url = "/posts/"
+  url = "/blog/"
   weight = 3
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "Contact"
-  url = "/contact/"
+  name = "Hubungi Saya"
+  url = "/hubungi-saya/"
   weight = 4
   disableThemeToggle = true
 

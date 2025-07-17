@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Agung Sukariman</title><link>https://agungsukariman.com/</link><description>Recent content on Agung Sukariman</description><generator>Hugo -- 0.147.6</generator><language>en-us</language><lastBuildDate/><atom:link href="https://agungsukariman.com/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Agung Sukariman</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Agung Sukariman</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jul 2025 01:57:03 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pertama</title>
+      <link>http://localhost:1313/blog/pertama/</link>
+      <pubDate>Fri, 18 Jul 2025 01:57:03 +0700</pubDate>
+      <guid>http://localhost:1313/blog/pertama/</guid>
+      <description>&lt;p&gt;Saya sangat sekali bisa memulai kembali ngeblog setelah sekalian lama saya tidak pernah menulis kembali&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hubungi saya</title>
+      <link>http://localhost:1313/hubungi-saya/</link>
+      <pubDate>Thu, 18 Jul 2024 10:10:00 +0700</pubDate>
+      <guid>http://localhost:1313/hubungi-saya/</guid>
+      <description>&lt;p&gt;Ingin menghubungi saya?&lt;br&gt;
+Silakan email ke &lt;a href=&#34;mailto:halo@agungsukariman.com&#34;&gt;halo@agungsukariman.com&lt;/a&gt; atau gunakan formulir kontak di bawah ini.&lt;/p&gt;
+&lt;p&gt;Saya akan membalas dalam waktu 1x24 jam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tentang Saya</title>
+      <link>http://localhost:1313/tentang-saya/</link>
+      <pubDate>Thu, 18 Jul 2024 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tentang-saya/</guid>
+      <description>&lt;p&gt;Halo, nama saya Agung Sukariman.&lt;br&gt;
+Saya seorang freelancer di bidang digital marketing dan pengembangan web dengan pengalaman lebih dari 10 tahun.&lt;br&gt;
+Situs ini adalah tempat saya berbagi karya, pemikiran, serta membantu klien mencapai tujuan bisnis mereka melalui solusi digital yang efektif.&lt;/p&gt;
+&lt;p&gt;Silakan hubungi saya jika ingin bekerja sama atau sekadar berdiskusi.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
