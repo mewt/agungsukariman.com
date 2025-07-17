@@ -1,73 +1,32 @@
-name: Deploy Hugo Site to Biznet VPS
+name: Deploy Hugo
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        submodules: recursive
-        fetch-depth: 0
+    - name: Checkout Repo
+      uses: actions/checkout@v3
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest'
-        extended: true
+        hugo-version: '0.124.1'
 
-    - name: Build Hugo site
+    - name: Build Hugo Site
       run: hugo --minify
 
-    - name: Setup SSH Key and Known Hosts
-      if: github.ref == 'refs/heads/main'
-      run: |
-        mkdir -p ~/.ssh
-
-        # Decode base64 and write the private key
-        echo "${{ secrets.VPS_SSH_KEY }}" | base64 -d > ~/.ssh/biznet.pem
-        chmod 600 ~/.ssh/biznet.pem
-
-        # Add VPS host to known_hosts
-        ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
-
-    - name: Test SSH Connection (Debug)
-      if: github.ref == 'refs/heads/main'
-      run: |
-        ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "echo ✅ Connected to VPS"
-
-    - name: Deploy to VPS with Rsync
-      if: github.ref == 'refs/heads/main'
-      run: |
-        rsync -avz --delete -e "ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no" \
-          ./public/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/agungsukariman.com/
-
-    - name: Set Permissions and Restart Web Server
-      if: github.ref == 'refs/heads/main'
-      run: |
-        ssh -i ~/.ssh/biznet.pem -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-          sudo chown -R www-data:www-data /var/www/agungsukariman.com
-          sudo chmod -R 755 /var/www/agungsukariman.com
-
-          if systemctl is-active --quiet nginx; then
-            sudo systemctl reload nginx
-            echo "✅ Nginx reloaded."
-          elif systemctl is-active --quiet apache2; then
-            sudo systemctl reload apache2
-            echo "✅ Apache reloaded."
-          else
-            echo "⚠️ No known web server active."
-          fi
-        EOF
-
-    - name: Cleanup SSH Key
-      if: always()
-      run: rm -f ~/.ssh/biznet.pem
+    - name: Deploy via rsync
+      uses: burnett01/rsync-deployments@v2.0.0
+      with:
+        switches: -avz --delete
+        path: public/
+        remote_path: /home/himehime/agungsukariman.com/
+        remote_host: ${{ secrets.VPS_HOST }}
+        remote_user: ${{ secrets.VPS_USER }}
+        remote_key: ${{ secrets.VPS_KEY }}
 
