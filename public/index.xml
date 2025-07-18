@@ -1,38 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Agung Sukariman</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Agung Sukariman</description>
+    <title>Thanks for being here...</title>
+    <link>http://localhost:43875/</link>
+    <description>Recent content on Thanks for being here...</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>id</language>
-    <lastBuildDate>Fri, 18 Jul 2025 01:57:03 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Jul 2025 01:10:46 +0700</lastBuildDate>
+    <atom:link href="http://localhost:43875/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Found Myself</title>
+      <link>http://localhost:43875/stupid-blog-that-never-existed/how-i-found-myself/</link>
+      <pubDate>Sat, 19 Jul 2025 01:10:46 +0700</pubDate>
+      <guid>http://localhost:43875/stupid-blog-that-never-existed/how-i-found-myself/</guid>
+      <description>&lt;h2 id=&#34;how-i-found-myself-and-why-it-wasnt-what-i-expected&#34;&gt;How I Found Myself (And Why It Wasn’t What I Expected)&lt;/h2&gt;
+&lt;p&gt;For as long as I can remember, I thought life was supposed to follow a straight line. You pick a dream when you’re young—astronaut, architect, rockstar, whatever—and then you chase it down, step by step. That’s what we’re told, anyway.&lt;/p&gt;
+&lt;p&gt;But here’s what nobody tells you: most of us end up &lt;em&gt;somewhere completely different&lt;/em&gt;. We blink, years pass, and suddenly we’re not the people we once imagined.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Pertama</title>
-      <link>http://localhost:1313/blog/pertama/</link>
+      <link>http://localhost:43875/stupid-blog-that-never-existed/celotehan-bego-pertama/</link>
       <pubDate>Fri, 18 Jul 2025 01:57:03 +0700</pubDate>
-      <guid>http://localhost:1313/blog/pertama/</guid>
-      <description>&lt;p&gt;Saya sangat sekali bisa memulai kembali ngeblog setelah sekalian lama saya tidak pernah menulis kembali&lt;/p&gt;</description>
+      <guid>http://localhost:43875/stupid-blog-that-never-existed/celotehan-bego-pertama/</guid>
+      <description>&lt;h2 id=&#34;i-dont-even-know-where-to-start&#34;&gt;I don’t even know where to start.&lt;/h2&gt;
+&lt;p&gt;Maybe this blog exists out of ego. Maybe it’s just me trying to fix the mess I made with rasastroberi—a blog I once loved, hated, and at one point thought about killing (along with the part of me that made it). Or maybe it’s an attempt to bury alkind_COOL—a name so cringe I still flinch thinking about it.&lt;/p&gt;
+&lt;h2 id=&#34;anyway-im-glad-youre-here&#34;&gt;Anyway… I’m glad you&amp;rsquo;re here.&lt;/h2&gt;
+&lt;p&gt;This space, agungsukariman.com, is gonna be my place to dump thoughts. I’ll talk about digital marketing, tech stuff, dead or dying SEO tricks, tools I like, music I listen to, things I’m building, breaking, or obsessed with. Nothing too formal. Just notes from my head to yours.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hubungi saya</title>
-      <link>http://localhost:1313/hubungi-saya/</link>
+      <title>Call Me</title>
+      <link>http://localhost:43875/promise-me-you-will-make-a-call/</link>
       <pubDate>Thu, 18 Jul 2024 10:10:00 +0700</pubDate>
-      <guid>http://localhost:1313/hubungi-saya/</guid>
-      <description>&lt;p&gt;Ingin menghubungi saya?&lt;br&gt;
-Silakan email ke &lt;a href=&#34;mailto:halo@agungsukariman.com&#34;&gt;halo@agungsukariman.com&lt;/a&gt; atau gunakan formulir kontak di bawah ini.&lt;/p&gt;
-&lt;p&gt;Saya akan membalas dalam waktu 1x24 jam.&lt;/p&gt;</description>
+      <guid>http://localhost:43875/promise-me-you-will-make-a-call/</guid>
+      <description>&lt;p&gt;Got something to say? Whether it’s serious or just for fun, I’m all ears.&lt;br&gt;
+If you’re dealing with a tracking issue on the client side, setting up GA4, wrestling with server-side tagging, or your DataLayer looks like spaghetti 🍝 — let me know your stack. I’ll help. Promise. 🤝&lt;/p&gt;
+&lt;p&gt;You can email me at &lt;a href=&#34;mailto:halo@agungsukariman.com&#34;&gt;halo@agungsukariman.com&lt;/a&gt;&lt;br&gt;
+or drop a message through the contact form below.&lt;/p&gt;
+&lt;p&gt;I usually reply within 1×24 hours ⏳ — unless my Wi-Fi decides to ghost me 👻.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tentang Saya</title>
-      <link>http://localhost:1313/tentang-saya/</link>
+      <title>Long Story Short</title>
+      <link>http://localhost:43875/let-me-tell-you-a-stories/</link>
       <pubDate>Thu, 18 Jul 2024 10:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tentang-saya/</guid>
-      <description>&lt;p&gt;Halo, nama saya Agung Sukariman.&lt;br&gt;
-Saya seorang freelancer di bidang digital marketing dan pengembangan web dengan pengalaman lebih dari 10 tahun.&lt;br&gt;
-Situs ini adalah tempat saya berbagi karya, pemikiran, serta membantu klien mencapai tujuan bisnis mereka melalui solusi digital yang efektif.&lt;/p&gt;
-&lt;p&gt;Silakan hubungi saya jika ingin bekerja sama atau sekadar berdiskusi.&lt;/p&gt;</description>
+      <guid>http://localhost:43875/let-me-tell-you-a-stories/</guid>
+      <description>&lt;p&gt;The truth is, &lt;em&gt;Agung&lt;/em&gt; was never meant to be my name. My mom wanted &lt;em&gt;Agus&lt;/em&gt; — you know, the classic Indo name, mass-produced like mie instan 🍜. But maybe that’s the problem. Too many &lt;em&gt;Agus&lt;/em&gt;es walking around. So my dad came through with &lt;em&gt;Agung&lt;/em&gt;. Sounds like some Bali prince or gamelan prodigy… but nope. Just me. Not Balinese. Just… here.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sukariman&lt;/em&gt;? That’s a whole other drama.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SU&lt;/strong&gt; from &lt;em&gt;Sulastri&lt;/em&gt;, my mom — the real MVP.&lt;br&gt;
+&lt;strong&gt;KARIM&lt;/strong&gt;, from the Karim family, who literally picked baby me up from the hospital when my parents were broke. No grab, no gojek, just pure kindness ❤️&lt;br&gt;
+And &lt;strong&gt;MAN&lt;/strong&gt;? That’s for &lt;em&gt;Basman&lt;/em&gt;, my dad. Or as I like to call it… &lt;em&gt;Bestman&lt;/em&gt;. Lols.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
