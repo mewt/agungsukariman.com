@@ -1,6 +1,6 @@
 +++
 date = '2025-07-18T01:57:03+07:00'
-draft = true
+draft = false
 title = 'Pertama'
 +++
 
