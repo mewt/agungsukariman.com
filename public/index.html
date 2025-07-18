@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Thanks for being here...</title>
+<title>agungsukariman</title>
 
 <meta name="description" content="The Stupid Blog That Never Existed,  digital marketing bullshit , furneral of dead SEO, shit content and tech-bois wannabe">
 <meta name="author" content="Agung Sukariman">
@@ -34,12 +34,38 @@
 </head>
 
 <body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Thanks for being here... (Alt + H)">Thanks for being here...</a>
+            <a href="http://localhost:1313/" accesskey="h" title="agungsukariman (Alt + H)">agungsukariman</a>
             <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul id="menu">
@@ -69,7 +95,7 @@
 <main class="main"> 
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1>agungsukariman.com</h1>
+        <h1>Thanks for being here&hellip;</h1>
     </header>
     <div class="entry-content">
         👋 Welcome to my personal space on the web — a place where I share the thoughts, stories, and truths I can’t post anywhere else
@@ -136,7 +162,7 @@ Anyway… I’m glad you’re here. This space, agungsukariman.com, is gonna be 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Thanks for being here...</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">agungsukariman</a></span> · 
 
     <span>
         Powered by
@@ -190,6 +216,18 @@ Anyway… I’m glad you’re here. This space, agungsukariman.com, is gonna be 
             mybutton.style.opacity = "0";
         }
     };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

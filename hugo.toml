@@ -1,6 +1,6 @@
 baseURL = "https://agungsukariman.com/"
 languageCode = "id"
-title = "Thanks for being here..."
+title = "agungsukariman"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -13,13 +13,13 @@ canonifyURLs = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true
   defaultTheme = "dark"
-  disableThemeToggle = true
+  disableThemeToggle = false
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShareButtons = ["linkedin", "twitter","whatsapp","facebook"]
 
 [params.homeInfoParams]
-  Title = "agungsukariman.com"
+  Title = "Thanks for being here..."
   Content = "👋 Welcome to my personal space on the web — a place where I share the thoughts, stories, and truths I can’t post anywhere else"
 
 
