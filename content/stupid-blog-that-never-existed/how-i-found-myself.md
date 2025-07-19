@@ -5,7 +5,7 @@ title = 'How I Found Myself'
 +++
 
 
-## How I Found Myself (And Why It Wasn’t What I Expected)
+## Why It Wasn’t What I Expected
 
 For as long as I can remember, I thought life was supposed to follow a straight line. You pick a dream when you’re young—astronaut, architect, rockstar, whatever—and then you chase it down, step by step. That’s what we’re told, anyway.
 
