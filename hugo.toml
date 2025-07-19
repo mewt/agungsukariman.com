@@ -18,13 +18,11 @@ canonifyURLs = true
   ShowPostNavLinks = true
   ShareButtons = ["linkedin", "twitter","whatsapp","facebook"]
   
-
+  
 [params.homeInfoParams]
   Title = "Thanks for being here..."
-  Content = "👋 Welcome to my personal space on the web — a place where I share the thoughts, stories, and truths I can’t post anywhere else"
-
-
-
+  Content = "👋 Welcome to my personal space on the web — a place where I share the thoughts, stories, and truths"
+  
 [[menu.main]]
   name = "Home"
   url = "/"
