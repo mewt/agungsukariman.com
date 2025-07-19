@@ -37,18 +37,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/tags/bacot/</loc>
+    <lastmod>2025-07-19T02:15:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/go-blog/idiot-bike-idiot-owner/</loc>
+    <lastmod>2025-07-19T02:15:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/sepedaan/</loc>
     <lastmod>2025-07-19T02:15:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/go-blog/how-i-found-myself/</loc>
     <lastmod>2025-07-19T01:10:46+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/bacot/</loc>
-    <lastmod>2025-07-18T01:57:03+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
