@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>agungsukariman</title>
 
-<meta name="description" content="The Stupid Blog That Never Existed,  digital marketing bullshit , furneral of dead SEO, shit content and tech-bois wannabe">
+<meta name="description" content="Author of The Stupid Blog That Never Existed,  digital marketing bullshit , furneral of dead SEO, shit content and tech-bois wannabe">
 <meta name="author" content="Agung Sukariman">
 <link rel="canonical" href="http://localhost:1313/">
 <link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
@@ -30,13 +30,45 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
 </noscript>
 </head>
 
-<body class="list dark" id="top">
+<body class="list" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "light") {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
     }
 
 </script>
@@ -115,7 +147,7 @@
   <div class="entry-content">
     <p>It all started with Patrick —
 Not a person. A bike.
-A junk Chinese gravel bike I bought for 600K from the cursed depths of Shitpee.com (yeah, Shopee — but worse).
+A junk Chinese gravel bike I bought for 600K from the cursed depths of Shitpee (yeah, Shopee)
 Before it was Patrick, it was just… tragic.
 White frame.
 Shitty red decals that looked like knock-off fire graphics.
@@ -138,7 +170,7 @@ It just kept rolling — no questions asked.
     </h2>
   </header>
   <div class="entry-content">
-    <p>How I Found Myself (And Why It Wasn’t What I Expected) For as long as I can remember, I thought life was supposed to follow a straight line. You pick a dream when you’re young—astronaut, architect, rockstar, whatever—and then you chase it down, step by step. That’s what we’re told, anyway.
+    <p>Why It Wasn’t What I Expected For as long as I can remember, I thought life was supposed to follow a straight line. You pick a dream when you’re young—astronaut, architect, rockstar, whatever—and then you chase it down, step by step. That’s what we’re told, anyway.
 But here’s what nobody tells you: most of us end up somewhere completely different. We blink, years pass, and suddenly we’re not the people we once imagined.
 ...</p>
   </div>
