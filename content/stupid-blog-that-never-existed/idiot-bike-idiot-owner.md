@@ -6,15 +6,15 @@ title = 'Dumb Bike, Dumber Owner  🤦‍♂️🚲'
 
 It all started with **Patrick** —  
 Not a person. A bike.  
-A *junk Chinese gravel bike* I bought for **600K** from the cursed depths of **Shitpee.com** (yeah, Shopee — but worse).
+A *junk Chinese gravel bike* I bought for **600K** from the cursed depths of **Shitpee** (yeah, ~~Shopee~~)
 
 Before it was Patrick, it was just... tragic.  
 White frame.  
+
 **Shitty red decals** that looked like knock-off fire graphics.  
 I thought stickers would save it.  
 So I went full Jaksel-core: anime, fake brands, nonsense logos.  
 **It looked worse.**
-
 
 But I don’t know why…  
 I *loved* that damn bike.  
@@ -23,9 +23,8 @@ It just kept rolling — no questions asked.
 
 Then came the pain rides:
 - **Audax 200KM** — finished, but missed the cut-off. Still proud.
-- **JBR (Jakarta Border Ride)** — my legs never forgave me.
-- **GXID** — routes designed by psychopaths with GPS.
-- **Jakarta Bronx Ride** — where bike lanes go to die.
+- **JBR (Jakarta Bronx ~~Border~~ Ride)** — my legs never forgave me, where bike lanes go to die.
+- **GXID  a.k.a Jakarta  Ride** — routes designed by psychopaths with GPS.
 - **Depok U-Series** — 130KM + 1300m elev. For fun? Nope. For trauma.
 
 After all that, I said:  
