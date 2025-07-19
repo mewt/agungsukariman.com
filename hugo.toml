@@ -33,27 +33,27 @@ canonifyURLs = true
 
 
 [[menu.main]]
-  name = "unSigned"
+  name = "Unsigned"
   url = "/let-me-tell-you-a-stories/"
   weight = 2
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "unWritten"
+  name = "Unwritten"
   url = "/go-blog/"
   weight = 3
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "unTouch"
+  name = "Untouch"
   url = "/promise-me-you-will-make-a-call/"
   weight = 4
   disableThemeToggle = true
 
 [[menu.main]]
-  name = "UnArchive"
+  name = "Unarchive"
   url = "/dont-open"
   weight = 5
   disableThemeToggle = true
