@@ -2,27 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/go-blog/ramadan-reflections/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/celotehan/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/go-blog/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ramadan/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/reflection/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/go-blog/idiot-bike-idiot-owner/</loc>
     <lastmod>2025-07-19T02:15:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/stupid-blog-that-never-existed/idiot-bike-idiot-owner/</loc>
-    <lastmod>2025-07-19T02:15:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/stupid-blog-that-never-existed/</loc>
-    <lastmod>2025-07-19T02:15:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/stupid-blog-that-never-existed/how-i-found-myself/</loc>
+    <loc>http://localhost:1313/go-blog/how-i-found-myself/</loc>
     <lastmod>2025-07-19T01:10:46+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/stupid-blog-that-never-existed/celotehan-bego-pertama/</loc>
+    <loc>http://localhost:1313/tags/bacot/</loc>
+    <lastmod>2025-07-18T01:57:03+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ego/</loc>
+    <lastmod>2025-07-18T01:57:03+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/go-blog/celotehan-bego-pertama/</loc>
     <lastmod>2025-07-18T01:57:03+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -41,7 +76,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/dont-open/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

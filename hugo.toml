@@ -1,6 +1,6 @@
 baseURL = "https://agungsukariman.com/"
 languageCode = "EN"
-title = "agungsukariman"
+title = "The Stupid Blog That Never Existed"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -17,6 +17,7 @@ canonifyURLs = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShareButtons = ["linkedin", "twitter","whatsapp","facebook"]
+  
 
 [params.homeInfoParams]
   Title = "Thanks for being here..."
@@ -32,23 +33,29 @@ canonifyURLs = true
 
 
 [[menu.main]]
-  name = "Unsigned"
+  name = "unSigned"
   url = "/let-me-tell-you-a-stories/"
   weight = 2
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "Unwritten"
-  url = "/stupid-blog-that-never-existed/"
+  name = "unWritten"
+  url = "/go-blog/"
   weight = 3
   disableThemeToggle = true
 
 
 [[menu.main]]
-  name = "Untouch"
+  name = "unTouch"
   url = "/promise-me-you-will-make-a-call/"
   weight = 4
+  disableThemeToggle = true
+
+[[menu.main]]
+  name = "UnArchive"
+  url = "/dont-open"
+  weight = 5
   disableThemeToggle = true
 
 

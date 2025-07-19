@@ -2,6 +2,7 @@
 date = '2025-07-19T01:10:46+07:00'
 draft = false
 title = 'How I Found Myself'
+tags = ["Celotehan", "Reflection"]
 +++
 
 

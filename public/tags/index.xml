@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on agungsukariman</title>
+    <title>Tags on The Stupid Blog That Never Existed</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on agungsukariman</description>
+    <description>Recent content in Tags on The Stupid Blog That Never Existed</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>EN</language>
+    <lastBuildDate>Sat, 19 Jul 2025 11:21:14 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Celotehan</title>
+      <link>http://localhost:1313/tags/celotehan/</link>
+      <pubDate>Sat, 19 Jul 2025 11:21:14 +0700</pubDate>
+      <guid>http://localhost:1313/tags/celotehan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ramadan</title>
+      <link>http://localhost:1313/tags/ramadan/</link>
+      <pubDate>Sat, 19 Jul 2025 11:21:14 +0700</pubDate>
+      <guid>http://localhost:1313/tags/ramadan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflection</title>
+      <link>http://localhost:1313/tags/reflection/</link>
+      <pubDate>Sat, 19 Jul 2025 11:21:14 +0700</pubDate>
+      <guid>http://localhost:1313/tags/reflection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bacot</title>
+      <link>http://localhost:1313/tags/bacot/</link>
+      <pubDate>Fri, 18 Jul 2025 01:57:03 +0700</pubDate>
+      <guid>http://localhost:1313/tags/bacot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ego</title>
+      <link>http://localhost:1313/tags/ego/</link>
+      <pubDate>Fri, 18 Jul 2025 01:57:03 +0700</pubDate>
+      <guid>http://localhost:1313/tags/ego/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

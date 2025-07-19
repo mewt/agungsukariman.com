@@ -2,6 +2,7 @@
 date = '2025-07-19T02:15:14+07:00'
 draft = false
 title = 'Dumb Bike, Dumber Owner  🤦‍♂️🚲'
+tags = ["Sepedaan","Bacot"]
 +++
 
 It all started with **Patrick** —  

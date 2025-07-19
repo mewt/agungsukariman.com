@@ -2,6 +2,7 @@
 date = '2025-07-18T01:57:03+07:00'
 draft = false
 title = 'Pertama'
+tags = ["Celotehan", "Bacot", "Ego"]
 +++
 
 ## I don’t even know where to start.
