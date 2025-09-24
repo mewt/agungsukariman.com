@@ -1,5 +1,5 @@
 +++
-date = "2025-08-17T07:30:00+07:00"
+date = "2025-09-25T02:01:47+07:00"
 title = "Audax 150KM Jakarta: Unsupported and Unbroken"
 tags = ["Cycling", "Endurance", "Jakarta"]
 +++

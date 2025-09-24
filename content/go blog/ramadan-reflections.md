@@ -5,6 +5,7 @@ title = 'A Ramadan Reflection ~ 😅 Late Post'
 tags = ["Celotehan", "Reflection", "Ramadan"]
 +++
 
+## Ramadhan Stories
 A few months back, around Ramadan, I stumbled into an anime I totally misjudged.  
 Thought it was some weird horror or action thing (title had *Orb* in it, so yeah, I expected punching or blood or something like that).  
 
@@ -15,18 +16,21 @@ And the madness people faced when they tried to prove something the world wasn�
 Didn’t expect to feel anything.  
 Instead, I got wrecked.
 
+## It felt too real
 Watching someone dedicate their **entire life** to a truth and still get rejected ... damn.  
 That broke something inside me.  
 It felt too real. Like the kind of pain you can’t argue with — the pain of being *right*, too early.
 
 ---
 
+## My Mind went elsewhere
 And suddenly, my mind went elsewhere.  
 I started thinking about **Prophet Muhammad ﷺ**.
 
 He wasn’t trying to prove planets move.  
 He was trying to **guide hearts**.
 
+## Things we're still figuring out
 He didn’t come with formulas or telescopes.  
 But the Qur’an talks about the **cosmos**, the **heavens**, the **universe expanding**, and yeah ... 
 things we’re still figuring out.
@@ -42,6 +46,7 @@ And I thought:
 
 ---
 
+## Science & Faith
 That anime made me feel a lot.  
 Like... science and faith don’t have to fight.  
 Sometimes they meet.  

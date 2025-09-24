@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>The Stupid Blog That Never Existed</title>
+    <title>Lifecycle 404</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on The Stupid Blog That Never Existed</description>
-    <generator>Hugo -- 0.147.6</generator>
+    <description>Recent content on Lifecycle 404</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>EN</language>
-    <lastBuildDate>Sat, 19 Jul 2025 11:21:14 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 Sep 2025 02:01:47 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audax 150KM Jakarta: Unsupported and Unbroken</title>
+      <link>http://localhost:1313/go-blog/audax-150km-jakarta/</link>
+      <pubDate>Thu, 25 Sep 2025 02:01:47 +0700</pubDate>
+      <guid>http://localhost:1313/go-blog/audax-150km-jakarta/</guid>
+      <description>&lt;p&gt;I signed up for the Jakarta 150 KM audax thinking it would be a vibe—steady pace, friendly checkpoints, maybe an iced kopi at halfway. Instead, the sun clocked in early and refused to clock out. By kilometer 20 the heat was pinning me to the asphalt, every pedal stroke a reminder that I could tap out any time.&lt;/p&gt;
+&lt;p&gt;The route didn’t help. Whoever traced the GPX must love chaos because the course dove into muddy backroads that grabbed at tires and shoes like quicksand. My drivetrain protested until the chain finally snapped, a metallic &lt;em&gt;thunk&lt;/em&gt; that rattled me harder than any climb. I patched it together with greasy fingers and a spare link, cursing every puddle hiding jagged gravel.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Ramadan Reflection ~ 😅 Late Post</title>
       <link>http://localhost:1313/go-blog/ramadan-reflections/</link>
       <pubDate>Sat, 19 Jul 2025 11:21:14 +0700</pubDate>
       <guid>http://localhost:1313/go-blog/ramadan-reflections/</guid>
-      <description>&lt;p&gt;A few months back, around Ramadan, I stumbled into an anime I totally misjudged.&lt;br&gt;
+      <description>&lt;h2 id=&#34;ramadhan-stories&#34;&gt;Ramadhan Stories&lt;/h2&gt;
+&lt;p&gt;A few months back, around Ramadan, I stumbled into an anime I totally misjudged.&lt;br&gt;
 Thought it was some weird horror or action thing (title had &lt;em&gt;Orb&lt;/em&gt; in it, so yeah, I expected punching or blood or something like that).&lt;/p&gt;
 &lt;p&gt;Turns out&amp;hellip; it was about &lt;strong&gt;geocentric vs. heliocentric theory&lt;/strong&gt;.&lt;br&gt;
 Earth-centered vs. Sun-centered.&lt;br&gt;
-And the madness people faced when they tried to prove something the world wasn’t ready to accept.&lt;/p&gt;
-&lt;p&gt;Didn’t expect to feel anything.&lt;br&gt;
-Instead, I got wrecked.&lt;/p&gt;</description>
+And the madness people faced when they tried to prove something the world wasn’t ready to accept.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dumb Bike, Dumber Owner  🤦‍♂️🚲</title>

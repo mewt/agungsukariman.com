@@ -17,6 +17,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/tags/ramadan/</loc>
     <lastmod>2025-07-19T11:21:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -28,11 +33,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-19T11:21:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
