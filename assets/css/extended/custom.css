@@ -1,0 +1,168 @@
+/* Tech-inspired hero spacing and styling */
+:root {
+  --tech-accent: #18f2c1;
+  --tech-accent-rgb: 24, 242, 193;
+  --tech-border: rgba(24, 242, 193, 0.45);
+  --tech-accent-soft: rgba(24, 242, 193, 0.12);
+  --tech-shadow: rgba(24, 242, 193, 0.35);
+}
+
+body:not(.dark) {
+  --theme: #faf2e8;
+  --entry: #fff9f2;
+  --primary: #27160a;
+  --secondary: rgba(148, 98, 52, 0.82);
+  --tertiary: rgba(230, 180, 130, 0.7);
+  --content: #322013;
+  --code-block-bg: #f4e6d6;
+  --code-bg: #fff6ed;
+  --border: rgba(214, 166, 117, 0.35);
+  background: #fdf7ef;
+}
+
+body.dark {
+  --tech-accent: #3af7ff;
+  --tech-accent-rgb: 58, 247, 255;
+  --tech-border: rgba(58, 247, 255, 0.45);
+  --tech-accent-soft: rgba(58, 247, 255, 0.18);
+  --tech-shadow: rgba(58, 247, 255, 0.45);
+}
+
+body:not(.dark) .main {
+  background: rgba(255, 251, 245, 0.92);
+  border: 1px solid rgba(214, 166, 117, 0.22);
+  box-shadow: 0 20px 40px -42px rgba(214, 166, 117, 0.35);
+}
+
+.first-entry {
+  position: relative;
+  margin: 0 0 32px;
+  min-height: 0;
+  padding: calc(var(--gap) * 1.25);
+  background: linear-gradient(135deg, var(--tech-accent-soft), transparent), var(--entry);
+  border: 1px solid var(--tech-border);
+  box-shadow: 0 16px 30px -22px var(--tech-shadow);
+}
+
+.first-entry::after {
+  content: "// featured";
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-family: "Fira Code", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(var(--tech-accent-rgb), 0.75);
+  pointer-events: none;
+}
+
+.first-entry .entry-header h1 {
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.02em;
+}
+
+.first-entry .entry-content {
+  color: rgba(var(--tech-accent-rgb), 0.7);
+}
+
+.post-entry {
+  border-left: 3px solid var(--tech-accent-soft);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+  border-left-color: var(--tech-accent);
+  transform: translate3d(0, -4px, 0);
+  box-shadow: 0 14px 28px -24px var(--tech-shadow);
+}
+
+.entry-footer {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.post-single {
+  position: relative;
+  margin: 0 0 calc(var(--gap) * 3);
+  padding: calc(var(--gap) * 1.75) calc(var(--gap) * 1.9);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--tech-accent-soft), transparent 65%), var(--entry);
+  border: 1px solid var(--tech-border);
+  box-shadow: 0 24px 46px -34px var(--tech-shadow);
+}
+
+.post-single::before {
+  content: "// article";
+  position: absolute;
+  top: 26px;
+  right: 36px;
+  font-family: "Fira Code", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(var(--tech-accent-rgb), 0.75);
+  pointer-events: none;
+}
+
+.post-single .post-header {
+  margin: 0 0 calc(var(--gap) * 1.6);
+}
+
+.post-single .post-title {
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.post-single .post-meta,
+.post-single .breadcrumbs {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(var(--tech-accent-rgb), 0.75);
+}
+
+.post-single .post-content a {
+  color: var(--tech-accent);
+  box-shadow: 0 1px 0 var(--tech-accent);
+}
+
+.post-single .post-content code {
+  background: rgba(var(--tech-accent-rgb), 0.08);
+  color: var(--tech-accent);
+}
+
+.post-single .post-footer,
+.post-single .post-tags a,
+.post-single .share-buttons,
+.post-single .paginav {
+  border-color: rgba(var(--tech-accent-rgb), 0.25);
+  background: rgba(var(--tech-accent-rgb), 0.05);
+}
+
+@media screen and (max-width: 768px) {
+  .first-entry {
+    margin: 0 0 24px;
+    padding: calc(var(--gap) * 1.1);
+  }
+
+  .first-entry::after {
+    top: unset;
+    bottom: 18px;
+    right: 22px;
+    letter-spacing: 0.16em;
+  }
+
+  .post-single {
+    margin: 0 0 calc(var(--gap) * 2.4);
+    padding: calc(var(--gap) * 1.25) calc(var(--gap) * 1.35);
+  }
+
+  .post-single::before {
+    top: 20px;
+    right: 24px;
+    letter-spacing: 0.18em;
+  }
+}
