@@ -3,9 +3,6 @@ date = "2025-09-25T02:01:47+07:00"
 title = "Audax 150KM Jakarta: Unsupported and Unbroken"
 tags = ["Cycling", "Endurance", "Jakarta"]
 +++
-
-# Jakarta 150 KM Audax: A Ride That Tested Everything  
-
 ## Starting With High Hopes  
 I signed up for the Jakarta 150 km Audax imagining a steady day in the saddle, easy pace, friendly banter at checkpoints, maybe even an iced kopi somewhere along the way. What I got was the exact opposite.  
 

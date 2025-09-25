@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/go-blog/audax-150km-jakarta/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/cycling/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/endurance/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/go-blog/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/jakarta/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-25T02:01:47+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/go-blog/ramadan-reflections/</loc>
     <lastmod>2025-07-19T11:21:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -12,27 +47,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/go-blog/</loc>
-    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/tags/ramadan/</loc>
     <lastmod>2025-07-19T11:21:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/reflection/</loc>
-    <lastmod>2025-07-19T11:21:14+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-07-19T11:21:14+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
