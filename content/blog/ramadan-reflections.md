@@ -19,7 +19,7 @@ Instead, I got wrecked.
 ## It felt too real
 Watching someone dedicate their **entire life** to a truth and still get rejected ... damn.  
 That broke something inside me.  
-It felt too real. Like the kind of pain you can’t argue with — the pain of being *right*, too early.
+It felt too real. Like the kind of pain you can’t argue with: the pain of being *right*, too early.
 
 ---
 
@@ -53,7 +53,7 @@ Sometimes they meet.
 In a verse. In a telescope. In a broken moment.  
 Or yeah, even in some random anime at 2AM during Ramadan 😅
 
-> Truth — whether uncovered through research, or held by faith —  
+> Truth, whether uncovered through research, or held by faith,  
 > it's still truth  
 > and it still shines.
 

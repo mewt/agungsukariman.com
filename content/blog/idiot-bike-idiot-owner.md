@@ -5,7 +5,7 @@ title = 'Dumb Bike, Dumber Owner  🤦‍♂️🚲'
 tags = ["Sepedaan","Bacot"]
 +++
 
-It all started with **Patrick** —  
+It all started with **Patrick**.  
 Not a person. A bike.  
 A *junk Chinese gravel bike* I bought for **600K** from the cursed depths of **Shitpee** (yeah, ~~Shopee~~)
 
@@ -20,13 +20,13 @@ So I went full Jaksel-core: anime, fake brands, nonsense logos.
 But I don’t know why…  
 I *loved* that damn bike.  
 Maybe because it didn’t care what it looked like.  
-It just kept rolling — no questions asked.
+It just kept rolling, no questions asked.
 
 Then came the pain rides:
-- **Audax 200KM** — finished, but missed the cut-off. Still proud.
-- **JBR (Jakarta Bronx ~~Border~~ Ride)** — my legs never forgave me, where bike lanes go to die.
-- **GXID  a.k.a Jakarta  Ride** — routes designed by psychopaths with GPS.
-- **Depok U-Series** — 130KM + 1300m elev. For fun? Nope. For trauma.
+- **Audax 200KM**: finished, but missed the cut-off. Still proud.
+- **JBR (Jakarta Bronx ~~Border~~ Ride)**: my legs never forgave me, where bike lanes go to die.
+- **GXID  a.k.a Jakarta  Ride**: routes designed by psychopaths with GPS.
+- **Depok U-Series**: 130KM + 1300m elev. For fun? Nope. For trauma.
 
 After all that, I said:  
 > "You know what, this frame deserves better."
@@ -38,7 +38,7 @@ Boom. Patrick was born.
 A fresh coat of class over years of chaos.
 
 While I was there, I made the dumbest smart move:  
-Bought **MKS Solution** pedals — pure Japan smoothness.  
+Bought **MKS Solution** pedals, pure Japan smoothness.  
 **2x the price of the MXL frame.**  
 Worth it?  
 Financially, no.  
@@ -60,7 +60,7 @@ Spiritually? Yes.
 
 ### What I Learned:
 - Don’t upgrade trash… unless you want a story  
-- Love makes you do dumb things — like $80 pedals on a $40 frame  
+- Love makes you do dumb things, like $80 pedals on a $40 frame  
 - Stickers don’t fix ugly  
 - Gravel ≠ comfort  
 - Dumb bikes + dumber owners = beautiful chaos

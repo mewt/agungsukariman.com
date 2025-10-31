@@ -7,7 +7,7 @@ tags = ["Celotehan", "Bacot", "Ego"]
 
 ## I don’t even know where to start.
 
-Maybe this blog exists out of ego. Maybe it’s just me trying to fix the mess I made with rasastroberi—a blog I once loved, hated, and at one point thought about killing (along with the part of me that made it). Or maybe it’s an attempt to bury alkind_COOL—a name so cringe I still flinch thinking about it.
+Maybe this blog exists out of ego. Maybe it’s just me trying to fix the mess I made with rasastroberi, a blog I once loved, hated, and at one point thought about killing (along with the part of me that made it). Or maybe it’s an attempt to bury alkind_COOL, a name so cringe I still flinch thinking about it.
 
 ## Anyway… I’m glad you're here.
 

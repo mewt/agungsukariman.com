@@ -1,6 +1,6 @@
 baseURL = "https://agungsukariman.com/"
 languageCode = "EN"
-title = "Lifecycle 404"
+title = "Growth Systems Lab"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -8,55 +8,46 @@ canonifyURLs = true
 
 [params]
   author = "Agung Sukariman"
-  description = "Author of The Stupid Blog That Never Existed,  digital marketing bullshit , furneral of dead SEO, shit content and tech-bois wannabe"
+  description = "Digital marketing expert with 9+ years helping brands and SMEs hit their goals through tracking setup, reporting automation, and ad optimisation."
   ShowReadingTime = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true
-  ShowToc = true
-  TocOpen = true
+  ShowToc = false
+  TocOpen = false
   defaultTheme = "auto" #light/dark/auto
   disableThemeToggle = false
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
-  ShareButtons = ["linkedin", "twitter","whatsapp","facebook"]
-  
-  
+  ShareButtons = ["linkedin", "twitter", "whatsapp", "facebook"]
+
 [params.homeInfoParams]
-  Title = "Thanks for being here..."
-  Content = "👋 Welcome to my personal space on the web — a place where I share the thoughts, stories, and truths"
-  
+  Title = "Data-Driven Marketing Setup"
+  Content = "Tracking, reporting, and optimisation for marketers who want clarity instead of chaos."
+
 [[menu.main]]
-  name = "Control Room"
+  name = "Home"
   url = "/"
   weight = 1
-  disableThemeToggle = true
-
 
 [[menu.main]]
-  name = "Origin Story"
-  url = "/let-me-tell-you-a-stories/"
+  name = "Services"
+  url = "/services/"
   weight = 2
-  disableThemeToggle = true
-
 
 [[menu.main]]
-  name = "Field Logs"
-  url = "/go-blog/"
+  name = "Projects"
+  url = "/projects/"
   weight = 3
-  disableThemeToggle = true
-
 
 [[menu.main]]
-  name = "Ping Me"
-  url = "/promise-me-you-will-make-a-call/"
+  name = "Blog"
+  url = "/blog/"
   weight = 4
-  disableThemeToggle = true
 
 [[menu.main]]
-  name = "Archive Vault"
-  url = "/dont-open"
+  name = "Contact"
+  url = "/contact/"
   weight = 5
-  disableThemeToggle = true
 
 
 [outputs]
@@ -69,3 +60,8 @@ canonifyURLs = true
 
 [params.assets]
   disableFingerprinting = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
