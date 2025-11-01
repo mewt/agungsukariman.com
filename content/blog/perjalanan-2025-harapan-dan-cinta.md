@@ -1,6 +1,6 @@
 +++
 date = '2025-10-26T18:18:54+07:00'
-draft = true
+draft = false
 title = 'Perjalanan 2025 Harapan Dan Cinta'
 +++
 
