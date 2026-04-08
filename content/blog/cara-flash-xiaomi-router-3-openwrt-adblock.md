@@ -1,5 +1,5 @@
 +++
-date = '2025-04-08T22:20:00+07:00'
+date = '2026-04-08T22:20:00+07:00'
 draft = false
 title = 'Ironi Seorang Digital Marketer: Nge-hack Router Xiaomi 3 Demi Memblokir Iklan'
 tags = ["Tech", "OpenWRT", "Digital Marketing", "Irony", "Router", "AdBlock", "Privacy"]
