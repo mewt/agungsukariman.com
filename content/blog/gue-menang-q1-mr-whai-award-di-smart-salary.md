@@ -5,11 +5,11 @@ title = 'Gue Menang Q1 Mr. WHAI Award di Smart Salary — dan Ini Tim Keren di B
 tags = ["smart-salary", "career", "award", "ai", "digital-marketing", "work-life"]
 +++
 
-![Q1 2026 Mr. WHAI Award](/q1-mr-whai-award-2026.png)
-
 Oke, jadi gue mau cerita sesuatu yang baru aja terjadi di awal tahun ini.
 
 Gue dapet **Q1 Mr. WHAI Award** dari Smart Salary. Iya, gue sendiri agak kaget sih pas namanya dipanggil di depan (karena biasanya palingan cuma dengerin aja orang lain dipanggil wkwk), tapi ya seneng banget lah. Apalagi pas tahu itu award untuk tim Marketing. Jadi nggak cuma gue doang yang diapresiasi, tapi semua kerja keras tim yang akhirnya ke-notice juga.
+
+![MR WHAI](/q1-mr-whai-award-2026.jpeg)
 
 ## Apa Sih Mr. WHAI Award Itu?
 
