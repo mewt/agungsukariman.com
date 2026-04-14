@@ -51,7 +51,7 @@ Artikelnya ditulis oleh *yours truly* juga sih wkwk. Jadi kalau lo baca, ya itu 
 Gue nggak bisa dapet award ini sendirian. Di Smart Salary, gue dikelilingin sama orang-orang yang keren banget dan masing-masing punya *zone of genius* sendiri. Gue mau kasih apresiasi khusus buat beberapa rekan kerja gue yang performanya di Q1 2026 ini bener-bener nggak main-main:
 
 ### 🏆 Ricky Halim — Q1 Best Performer (Marketing)
-Ricky tuh orang yang bisa adaptasi dengan cepet banget. Dari industri yang beda, masuk ke fintech/HR tech, terus langsung nangkep *tone* brand Smart Salary dalam waktu singkat. Konsisten build brand presence dari nol. Gue belajar banyak dari cara dia mikir soal brand communication.
+Ricky tuh orang yang bisa adaptasi dengan cepet banget. Dari industri yang beda, masuk ke HR Tech, terus langsung nangkep *tone* brand Smart Salary dalam waktu singkat. Konsisten build brand presence dari nol. Gue belajar banyak dari cara dia mikir soal brand communication.
 
 ### 🚀 Jayeng Hardika (Dika) — Q1 Breakthrough Award (Business Development)
 Dika ini *beast mode* di sales. Dia berhasil nge-secure klien EWA (Earned Wage Access) pertama yang malah nge-*replace* sistem eksisting mereka. Itu bukan cuma soal jualan, tapi soal *trust building* dan *consultative selling*. Gokil.
