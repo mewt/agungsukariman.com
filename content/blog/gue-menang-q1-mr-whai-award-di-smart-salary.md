@@ -1,12 +1,9 @@
----
-title: "Gue Menang Q1 Mr. WHAI Award di Smart Salary — dan Ini Tim Keren di Belakangnya"
-date: 2026-04-15
-draft: false
-tags: ["smart-salary", "career", "award", "ai", "digital-marketing", "work-life"]
-categories: ["Personal", "Career", "Tech"]
-author: "Agung Sukariman"
-description: "Gue dapet Q1 Mr. WHAI Award di Smart Salary tahun 2026. Cerita di baliknya, eksplorasi AI workflow, dan shoutout buat tim keren: Ricky, Dika, Vincent, Adit, dan Nurul."
----
++++
+date = '2026-04-15T00:00:00+07:00'
+draft = false
+title = 'Gue Menang Q1 Mr. WHAI Award di Smart Salary — dan Ini Tim Keren di Belakangnya'
+tags = ["smart-salary", "career", "award", "ai", "digital-marketing", "work-life"]
++++
 
 ![Q1 2026 Mr. WHAI Award](/q1-mr-whai-award-2026.png)
 
