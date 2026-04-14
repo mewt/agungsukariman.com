@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo *)",
+      "Bash(sudo *)",
+      "Bash(brew *)",
+      "Bash(curl *)",
+      "Bash(tar *)",
+      "Bash(chmod *)",
+      "Bash(git submodule *)",
+      "Bash(mkdir *)",
+      "Bash(mv *)"
+    ]
+  },
+  "$version": 3
+}

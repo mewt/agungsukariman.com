@@ -5,21 +5,21 @@ title = 'Ironi Seorang Digital Marketer: Nge-hack Router Xiaomi 3 Demi Memblokir
 tags = ["Tech", "OpenWRT", "Digital Marketing", "Irony", "Router", "AdBlock", "Privacy"]
 +++
 
-## Kenapa Saya Membenci Iklan (Padahal Kerjaannya Nge-iklan)
+## Kenapa Gue Membenci Iklan (Padahal Kerjaannya Nge-iklan)
 
-Ya, saya sadar ini ironi yang cukup lucu. Saya adalah digital marketer. Setiap hari saya bikin strategi iklan, optimasi kampanye, analisis data conversion rate, mikirin targeting yang paling efektif buat klien-klien saya. Tapi di sisi lain? Saya benci iklan. Sebenci-bencinya.
+Ya, gue sadar ini ironi yang cukup lucu. Gue adalah digital marketer. Setiap hari gue bikin strategi iklan, optimasi kampanye, analisis data conversion rate, mikirin targeting yang paling efektif buat klien-klien gue. Tapi di sisi lain? Gue benci iklan. Sebenci-bencinya.
 
-Bukan karena iklan itu jahat atau salah. Tapi karena saya *capek*. Setiap hari sudah dikelilingi iklan di berbagai platform—Facebook, Instagram, Google, TikTok—you name it. Di kantor, di rumah, di jalan, di handphone. Iklan ada di mana-mana. Dan saya sudah cukup.
+Bukan karena iklan itu jahat atau salah. Tapi karena gue *capek*. Setiap hari sudah dikelilingi iklan di berbagai platform—Facebook, Instagram, Google, TikTok—you name it. Di kantor, di rumah, di jalan, di handphone. Iklan ada di mana-mana. Dan gue sudah cukup.
 
 ## Titik Jenuh: "Gue Udah Muak!"
 
-Hari itu biasa saja. Saya browsing laptop, mau nonton YouTube santai. Tapi sebelum video dimulai, ada iklan 15 detik. Lalu 30 detik. Lalu double iklan yang tidak bisa di-skip. Setelah itu? Iklan banner di website. Iklan popup. Iklan di aplikasi. Iklan di game. Iklan di email.
+Hari itu biasa saja. Gue browsing laptop, mau nonton YouTube santai. Tapi sebelum video dimulai, ada iklan 15 detik. Lalu 30 detik. Lalu double iklan yang tidak bisa di-skip. Setelah itu? Iklan banner di website. Iklan popup. Iklan di aplikasi. Iklan di game. Iklan di email.
 
-Saya berhenti sejenak dan mikir: "Ini rumah gue. Kenapa gue harus lihat iklan di rumah gue sendiri?"
+Gue berhenti sejenak dan mikir: "Ini rumah gue. Kenapa gue harus lihat iklan di rumah gue sendiri?"
 
-Itu titik baliknya. Saya memutuskan untuk mengambil kendali penuh atas jaringan internet di rumah. Dan solusinya adalah: **router modifikasi dengan sistem adblock di level network**.
+Itu titik baliknya. Gue memutuskan untuk mengambil kendali penuh atas jaringan internet di rumah. Dan solusinya adalah: **router modifikasi dengan sistem adblock di level network**.
 
-## Apa itu OpenWRT? (Dan Kenapa Saya Pilih Ini)
+## Apa itu OpenWRT? (Dan Kenapa Gue Pilih Ini)
 
 Sebelum lanjut, mungkin ada yang bertanya-tanya: *"OpenWRT tuh apa sih?"*
 
@@ -109,11 +109,11 @@ Selesai install, konfigurasinya via web interface (LuCI) atau command line. Adbl
 
 ## Ironi yang Lebih Dalam
 
-Saya sadar ini hipokrisi yang cukup lucu. Saya kerja bikin iklan, tapi saya juga pengen bebas dari iklan. Tapi coba pikirkan: sebagai digital marketer, saya tahu persis seberapa invasif dan mengganggu iklan itu. Saya tahu teknik targeting yang digunakan. Saya tahu cara kerja retargeting yang bikin iklan "ngikutin" user ke mana-mana.
+Gue sadar ini hipokrisi yang cukup lucu. Gue kerja bikin iklan, tapi gue juga pengen bebas dari iklan. Tapi coba pikirkan: sebagai digital marketer, gue tahu persis seberapa invasif dan mengganggu iklan itu. Gue tahu teknik targeting yang digunakan. Gue tahu cara kerja retargeting yang bikin iklan "ngikutin" user ke mana-mana.
 
-Dan justru karena saya tahu, saya makin gak tahan lihat iklan.
+Dan justru karena gue tahu, gue makin gak tahan lihat iklan.
 
-Bedanya mungkin di sini: saya gak masalah dengan iklan yang **relevan dan respectful**. Iklan yang tidak mengganggu user experience. Tapi realitanya? Kebanyakan iklan di internet adalah spam visual yang memaksa.
+Bedanya mungkin di sini: gue gak masalah dengan iklan yang **relevan dan respectful**. Iklan yang tidak mengganggu user experience. Tapi realitanya? Kebanyakan iklan di internet adalah spam visual yang memaksa.
 
 ## Buat Apa Semua Ini?
 
@@ -133,7 +133,7 @@ Plus, ada kepuasan tersendiri bisa mengutak-atik hardware, install custom firmwa
 
 ## Credits & Resources
 
-Proses flashing Xiaomi Mi Router 3 ini gak mungkin tanpa kerja keras komunitas open source. Saya ingin berterima kasih dan memberikan credit kepada:
+Proses flashing Xiaomi Mi Router 3 ini gak mungkin tanpa kerja keras komunitas open source. Gue ingin berterima kasih dan memberikan credit kepada:
 
 ### 🛠️ OpenWRTInvasion
 **Repository:** https://github.com/acecilia/OpenWRTInvasion
@@ -154,11 +154,11 @@ Ini adalah sumber utama segala informasi tentang OpenWRT:
 Kalau mau mulai petualangan OpenWRT, situs ini adalah bible-nya. Mereka juga punya wiki yang super detail untuk hampir semua router yang pernah ada di muka bumi ini.
 
 ### 📚 Tutorial References
-Selain dua resource di atas, saya juga belajar dari berbagai blog post, YouTube tutorial, dan forum thread dari komunitas OpenWRT Indonesia dan internasional. Komunitas ini amazing—selalu siap bantu newbie yang stuck di proses flashing.
+Selain dua resource di atas, gue juga belajar dari berbagai blog post, YouTube tutorial, dan forum thread dari komunitas OpenWRT Indonesia dan internasional. Komunitas ini amazing—selalu siap bantu newbie yang stuck di proses flashing.
 
 ## Kesimpulan
 
-Saya mungkin digital marketer. Tapi saya juga manusia yang butuh *peace of mind* di rumah sendiri. Setelah setup ini, browsing jadi lebih cepat (karena gak perlu load iklan), baterai device lebih awet (gak perlu render iklan), dan yang paling penting: **saya merasa punya kendali**.
+Gue mungkin digital marketer. Tapi gue juga manusia yang butuh *peace of mind* di rumah sendiri. Setelah setup ini, browsing jadi lebih cepat (karena gak perlu load iklan), baterai device lebih awet (gak perlu render iklan), dan yang paling penting: **gue merasa punya kendali**.
 
 Dan mungkin itu pelajaran yang lebih besar: di era di mana tech giant mencoba mengontrol setiap aspek digital kita, ada kebebasan dalam mengambil kendali kembali. Meskipun itu cuma berarti nge-hack router murah demi menghilangkan iklan.
 
@@ -166,8 +166,10 @@ Ironis? Ya. Worth it? **Sangat.**
 
 ---
 
-**P.S.** Buat yang mau coba, silakan cek resource yang saya sebut di atas. Prosesnya memang butuh waktu dan kesabaran, tapi hasilnya worth it. Tapi ingat, flashing firmware ada risiko bricking router. Do with your own risk! 😉
+Btw, kalau kamu butuh solusi network management lain — misalnya buat collect data visitor WiFi guest tanpa perlu beli software mahal — gue pernah bangun sistem [lead generator dengan Ruijie + Google Sheets](/blog/cara-membuat-lead-generator-dari-wifi-captive-portal-ruijie-google-sheets/) yang bisa jadi referensi.
 
-**P.P.S.** Jangan bilang-bilan ke klien saya ya kalau saya blokir iklan di rumah. *It's our little secret.* 🤫
+**P.S.** Buat yang mau coba, silakan cek resource yang gue sebut di atas. Prosesnya memang butuh waktu dan kesabaran, tapi hasilnya worth it. Tapi ingat, flashing firmware ada risiko bricking router. Do with your own risk! 😉
+
+**P.P.S.** Jangan bilang-bilan ke klien gue ya kalau gue blokir iklan di rumah. *It's our little secret.* 🤫
 
 **Tags:** #OpenWRT #RouterHack #AdBlock #DigitalMarketing #TechDIY #Privacy #XiaomiRouter

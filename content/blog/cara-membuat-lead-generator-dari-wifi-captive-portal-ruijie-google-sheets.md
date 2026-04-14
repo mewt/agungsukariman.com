@@ -9,10 +9,13 @@ description: "Studi kasus lengkap bagaimana saya membangun sistem lead generator
 ---
 
 Beberapa waktu lalu, saya dapat tantangan menarik dari klien di bidang hospitality:
+![the seed bali](/theseedbali.png)
 
 > *"Gimana caranya kita bisa collect data visitor (nama dan email) setiap kali mereka connect ke WiFi guest, tanpa perlu beli software mahal?"*
 
 Singkat cerita: mereka punya venue di Bali dan mau memanfaatkan WiFi guest sebagai **lead generation tool**. Bayangin WiFi.id, tapi custom branding dan data lead-nya langsung masuk ke Google Sheets. *Challenge accepted!*
+
+![challenge accepted](/challenge-accepted.png)
 
 Di tulisan ini, saya akan share **end-to-end workflow** bagaimana saya membangun solusi ini menggunakan **Ruijie Network Cloud**, **custom captive portal HTML**, dan **Google Apps Script** sebagai webhook backend. Dokumentasi lengkap dan source code bisa cek di repo GitHub saya: [github.com/mewt/leadseedbali-connector](https://github.com/mewt/leadseedbali-connector/tree/main/portal_fresh).
 
@@ -24,6 +27,8 @@ Di tulisan ini, saya akan share **end-to-end workflow** bagaimana saya membangun
 
 Nah, ternyata halaman ini bisa kita *customize* dan jadikan **lead capture form**. Setiap orang yang mau internetan harus isi nama + email dulu. Data itu kita simpan, lalu otomatis redirect ke sosial media atau website venue.
 
+![alt text](/captive-login-wifi-custom.png)
+
 **Stack yang saya pilih:**
 
 | Komponen | Fungsi |
@@ -34,6 +39,8 @@ Nah, ternyata halaman ini bisa kita *customize* dan jadikan **lead capture form*
 | **Google Sheets** | Database sederhana untuk nyimpen leads |
 
 Kenapa Google Sheets? Karena gratis, no-server, dan tim marketing klien bisa langsung akses real-time tanpa perlu login dashboard Ruijie.
+
+Tips: Kalau mau blocir iklan di jaringan router, bypass captive portal, atau butuh solusi network-level filtering lainnya, bisa baca pengalaman saya flash router Xiaomi 3 ke OpenWRT di [artikel ini](/blog/cara-flash-xiaomi-router-3-openwrt-adblock/).
 
 ---
 
@@ -146,6 +153,8 @@ function doPost(e) {
 ## Step 2: Bangun Custom Captive Portal
 
 Ruijie Cloud punya fitur **Custom HTML Portal**. Artinya kita bisa upload file HTML/CSS/JS sendiri dan mengganti halaman login bawaan mereka.
+
+![captive login custom](/captive-login-rujiee.png)
 
 ### Struktur File Portal
 
@@ -306,6 +315,8 @@ function ruijieAuth() {
 
 Setelah auth sukses, redirect ke halaman tujuan:
 
+
+
 ```javascript
 window.location.href = 'https://www.instagram.com/THESEEDBALI/';
 ```
@@ -342,7 +353,9 @@ Sekarang setiap ada tamu yang connect ke WiFi:
 4. Dapat akses internet
 5. Langsung redirect ke Instagram
 
-**Screenshot Google Sheets hasil capture:**
+
+![leads recorded](/leads-recorded-in-google-sheets.png)
+
 *(bisa cek langsung di repo untuk detail teknis lengkapnya)*
 
 Repo dengan full source code dan dokumentasi: [github.com/mewt/leadseedbali-connector](https://github.com/mewt/leadseedbali-connector/tree/main/portal_fresh)

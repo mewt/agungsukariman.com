@@ -3,6 +3,7 @@ date = "2025-09-25T02:01:47+07:00"
 title = "Audax 150KM Jakarta: Unsupported and Unbroken"
 tags = ["Cycling", "Endurance", "Jakarta"]
 +++
+
 ## Starting With High Hopes  
 I signed up for the Jakarta 150 km Audax imagining a steady day in the saddle, easy pace, friendly banter at checkpoints, maybe even an iced kopi somewhere along the way. What I got was the exact opposite.  
 
@@ -19,3 +20,6 @@ As if that was not enough, the chain snapped just 7 km from the finish. Greasy f
 
 When I finally crossed the finish, jersey caked in salt and mind running on fumes, it felt like debugging life line by line, messy, frustrating, but worth every keystroke. Jakarta peeled me apart that day. Mud, busted chain, flat tire before checkpoint one, and the kind of heat that makes you hallucinate. But I still finished. That is the only line of code that matters.  
 
+---
+
+P.S. For more cycling chaos stories, check [Dumb Bike, Dumber Owner](/blog/idiot-bike-idiot-owner/) — because sometimes the bike wins.

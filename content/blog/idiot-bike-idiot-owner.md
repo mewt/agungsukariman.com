@@ -17,9 +17,9 @@ I thought stickers would save it.
 So I went full Jaksel-core: anime, fake brands, nonsense logos.  
 **It looked worse.**
 
-But I don’t know why…  
+But I don't know why…  
 I *loved* that damn bike.  
-Maybe because it didn’t care what it looked like.  
+Maybe because it didn't care what it looked like.  
 It just kept rolling, no questions asked.
 
 Then came the pain rides:
@@ -32,7 +32,7 @@ After all that, I said:
 > "You know what, this frame deserves better."
 
 So I called **Psychloop** in Darmawangsa:  
-> “Bro, repaint this thing. Name it Patrick.”
+> "Bro, repaint this thing. Name it Patrick."
 
 Boom. Patrick was born.  
 A fresh coat of class over years of chaos.
@@ -46,7 +46,7 @@ Spiritually? Yes.
 
 ---
 
-### Patrick’s Final Form:
+### Patrick's Final Form:
 - GRX 10-speed 🛠️  
 - **Entity Expert 400mm dropbar** (clearance steal from Rodalink 🙏)  
 - Dia-Compe bar-end shifters (retro + regret = realness)  
@@ -59,13 +59,15 @@ Spiritually? Yes.
 ---
 
 ### What I Learned:
-- Don’t upgrade trash… unless you want a story  
+- Don't upgrade trash… unless you want a story  
 - Love makes you do dumb things, like $80 pedals on a $40 frame  
-- Stickers don’t fix ugly  
+- Stickers don't fix ugly  
 - Gravel ≠ comfort  
 - Dumb bikes + dumber owners = beautiful chaos
 
 ---
+
+Catatan: Buat yang suka cerita cycling yang lebih *dramatis*, coba baca [Audax 150KM Jakarta](/blog/audax-150km-jakarta/) — chain putus, ban kempes, dan panas yang buat hallucinate.
 
 **Dumb bike. Dumber owner. Still riding.**  
 💚 Still broke. Still proud. Still here.

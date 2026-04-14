@@ -34,6 +34,10 @@ Sekarang gue ngerasa seperti kembali menemukan titik yang pas antara kerja, tekn
 
 ## Refleksi dan Harapan
 
-2025 memang tahun yang melelahkan, tapi juga tahun yang paling jujur buat gue. Tahun ini gue belajar kalau kehilangan bukan akhir dari segalanya. Ini adalah cara hidup memberi ruang untuk hal baru. Gue belajar bahwa kadang rasa takut dan lelah justru yang membuka jalan menuju sesuatu yang lebih besar.
+2025 memang tahun yang melelahkan, tapi juga tahun yang paling jujur buat gue.
+
+---
+
+P.S. Buat yang lagi dalam proses nyari diri sendiri atau bingung sama jalan hidup, bisa baca [How I Found Myself](/blog/how-i-found-myself/) — tentang jadi foreigner di luar sana dan belajar bahwa kita selalu dalam proses becoming. Tahun ini gue belajar kalau kehilangan bukan akhir dari segalanya. Ini adalah cara hidup memberi ruang untuk hal baru. Gue belajar bahwa kadang rasa takut dan lelah justru yang membuka jalan menuju sesuatu yang lebih besar.
 
 Sekarang gue tidak berharap hidup jadi lebih mudah. Gue hanya ingin terus tumbuh dan belajar, sedikit demi sedikit. Dan kalau suatu hari nanti, di tahun 2026, gue menengok ke belakang, gue ingin bisa bilang dengan tenang, “Syukurlah gue gak menyerah di tahun seberat ini.

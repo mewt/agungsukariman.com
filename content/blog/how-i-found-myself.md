@@ -47,3 +47,7 @@ Most days, though, I’m grateful for the one I’ve become, even if I had no id
 
 Because in the end, you don’t find yourself all at once.  
 You find yourself a little bit every day, in every surprise, every detour, every mirror.
+
+---
+
+P.S. Kalau kamu suka cerita tentang proses menemukan diri di tahun yang berat, cek [Perjalanan 2025](/blog/perjalanan-2025-harapan-dan-cinta/) — tentang layoff, fear, dan akhirnya menemukan napas baru.

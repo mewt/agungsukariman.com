@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on Growth Systems Lab</title><link>https://agungsukariman.com/categories/</link><description>Recent content in Categories on Growth Systems Lab</description><generator>Hugo -- 0.152.2</generator><language>EN</language><atom:link href="https://agungsukariman.com/categories/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Agung Sukariman | Digital Marketer &amp; Tech Tinkerer</title>
+    <link>https://agungsukariman.com/categories/</link>
+    <description>Recent content in Categories on Agung Sukariman | Digital Marketer &amp; Tech Tinkerer</description>
+    <generator>Hugo -- 0.160.1</generator>
+    <language>EN</language>
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://agungsukariman.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Business Tech</title>
+      <link>https://agungsukariman.com/categories/business-tech/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://agungsukariman.com/categories/business-tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://agungsukariman.com/categories/networking/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://agungsukariman.com/categories/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://agungsukariman.com/categories/tutorial/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://agungsukariman.com/categories/tutorial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

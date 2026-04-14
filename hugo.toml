@@ -1,6 +1,6 @@
 baseURL = "https://agungsukariman.com/"
 languageCode = "EN"
-title = "Growth Systems Lab"
+title = "Agung Sukariman | Digital Marketer & Tech Tinkerer"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -8,7 +8,7 @@ canonifyURLs = true
 
 [params]
   author = "Agung Sukariman"
-  description = "Digital marketing expert with 9+ years helping brands and SMEs hit their goals through tracking setup, reporting automation, and ad optimisation."
+  description = "Digital marketing specialist sharing stories about cycling, tech DIY, and personal growth. Based in Jakarta."
   ShowReadingTime = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true
@@ -21,8 +21,8 @@ canonifyURLs = true
   ShareButtons = ["linkedin", "twitter", "whatsapp", "facebook"]
 
 [params.homeInfoParams]
-  Title = "Data-Driven Marketing Setup"
-  Content = "Tracking, reporting, and optimisation for marketers who want clarity instead of chaos."
+  Title = "Welcome to My Corner"
+  Content = "Stories about cycling, tech tinkering, and figuring life out as I go."
 
 [[menu.main]]
   name = "Home"
@@ -62,6 +62,7 @@ canonifyURLs = true
   disableFingerprinting = false
 
 [markup]
+  enableExtendedSyntax = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
