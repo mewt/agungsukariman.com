@@ -26,6 +26,18 @@ Dan ya, gue akui sih beberapa bulan terakhir ini gue emang lagi **kecanduan bang
 
 Di Smart Salary, gue yakin banget kita nggak bisa stuck di cara-cara digital marketing yang tradisional terus. Dunia bergerak cepet, AI makin masuk ke mana-mana, dan kalau kita nggak adaptasi, kita yang bakal ketinggalan. Jadi gue ambil langkah buat jadi yang pertama di tim yang *really commit* buat adopt AI dalam operasional sehari-hari. Dan ternyata, itu dihargai sama perusahaan. Respect banget buat leadership Smart Salary yang ngeliat hal-hal kecil kayak gitu.
 
+## Kenalan Sama Alice (dan Squad AI Gue)
+
+Ngomongin soal AI, gue mau kenalin kalian sama tim AI gue yang ngebantu kerjaan gue sehari-hari.
+
+Pertama, ada **Alice**. Sebenernya Alice datang dari game yang gue mainin — **Coral Island**. Dia di-*power* oleh **ZeroClaw** dan sekarang jadi asisten pribadi yang ngebantu gue dari riset, nulis, sampe otomasi kerjaan.
+
+Tapi Alice nggak sendirian. Ada **Lily**, juga dari Coral Island, yang dibawa oleh **OpenClaw**. Lily terhubung ke **Lark** dan bantu banyak urusan komunikasi dan produktivitas gue. Terus ada **Macy**, lagi-lagi dari Coral Island, yang di-*power* **PicoClaw**. Macy juga terhubung ke Lark dan bantu di hal-hal yang butuh respons cepat.
+
+Jadi, gue punya **squad AI** yang masing-masing punya spesialisasi sendiri. Mereka bukan cuma tools, tapi lebih kayak *party member* di game yang saling melengkapi buat ngebantu gue nyelesaiin *quest* kerjaan harian.
+
+Di balik semua ini, ada **Mark** — *supervisor*, *mentor*, dan *bos* gue. Dia orang yang dari awal udah percaya banget kalau kolaborasi antara manusia dan AI bisa bikin sesuatu yang lebih baik, terus-menerus. Kepercayaan itulah yang bikin gue berani eksplorasi dan akhirnya sampai di titik ini.
+
 ## Baca Juga Versi Resminya
 
 Kalo lo penasaran sama cerita lengkap tim Smart Salary di Q1 2026, ada artikel resmi yang ditulis di blog perusahaan. Disitu dijelasin gimana performa tim dari berbagai divisi — Marketing, Business Development, sampe Implementation — semuanya lagi on fire di kuartal pertama tahun ini.
