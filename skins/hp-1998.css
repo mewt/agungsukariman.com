@@ -1,0 +1,297 @@
+/* =========================================================================
+   HP-1998 — late-90s corporate skin for Hugo + PaperMod.
+   Modeled on hp.com (Dec 1998): white page, narrow left-aligned column,
+   dithered blue gradient banners, pale-cream nav with thin rules, Arial,
+   blue underlined links, bold black headings, a maroon accent.
+
+   The blue banners (static/img/hp/banner.png, footer.png) are real
+   Floyd-Steinberg-dithered web-safe images — see scripts/retro-image.sh.
+
+   ACTIVATE:  ./switch-skin.sh hp-1998
+   ========================================================================= */
+
+:root {
+  --font-ui:   Arial, Helvetica, "Liberation Sans", sans-serif;
+  --hp-blue:   #103f8c;
+  --hp-blue-dk:#0a2a5e;
+  --hp-cream:  #ffffcc;
+  --hp-cream2: #fffff0;
+  --hp-maroon: #7a1f2b;
+  --hp-rule:   #c9c9c9;
+  --hp-link:   #0000cc;
+  --hp-visited:#551a8b;
+  --hp-text:   #111111;
+}
+
+/* ---- neutralize the GeoCities-only injected HTML (marquee, counter…) ---- */
+#retro-topbar, #retro-footer { display: none !important; }
+
+/* ---- lock a single, flat corporate look ------------------------------- */
+html { scroll-behavior: auto; }
+
+body,
+body.dark,
+body:not(.dark) {
+  background: #ffffff !important;
+  color: var(--hp-text);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.5;
+}
+body, button, input, select, textarea { font-family: var(--font-ui); }
+
+/* flatten modern flourishes */
+* { border-radius: 0 !important; box-shadow: none !important; }
+#theme-toggle { display: none !important; }
+
+/* =========================================================================
+   LAYOUT — narrow, a touch left of centre like a 1998 fixed-width table
+   ========================================================================= */
+.main {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 0 14px !important;
+}
+
+/* =========================================================================
+   HEADER — dithered blue banner + white title
+   ========================================================================= */
+.nav {
+  background: var(--hp-blue) url(/img/hp/banner.png) repeat-x !important;
+  background-size: auto 100% !important;
+  border: 0 !important;
+  border-bottom: 2px solid var(--hp-blue-dk) !important;
+  display: block;
+  padding: 12px 16px 10px !important;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.logo a {
+  font-family: var(--font-ui) !important;
+  font-size: 26px !important;
+  font-weight: bold !important;
+  font-style: italic;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+  text-decoration: none !important;
+  letter-spacing: .3px;
+}
+
+/* NAV BAR — pale-cream cells separated by thin rules (the HP sidebar look,
+   laid out horizontally to fit PaperMod's top menu) */
+#menu {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+  max-width: 760px;
+  background: var(--hp-cream);
+  border: 1px solid var(--hp-rule);
+  border-top: 0;
+}
+#menu li { list-style: none; margin: 0; }
+#menu a {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--hp-blue) !important;
+  background: var(--hp-cream);
+  padding: 6px 14px !important;
+  border-right: 1px solid var(--hp-rule);
+  text-decoration: none;
+}
+#menu a:hover { background: var(--hp-maroon); color: #fff !important; }
+#menu .active { background: var(--hp-cream2) !important; color: var(--hp-maroon) !important; }
+
+/* =========================================================================
+   LINKS — classic corporate blue / purple, underlined
+   ========================================================================= */
+a { color: var(--hp-link); text-decoration: underline; }
+a:visited { color: var(--hp-visited); }
+a:active { color: #cc0000; }
+
+/* =========================================================================
+   CONTENT BLOCKS — flat white, separated by thin rules
+   ========================================================================= */
+.first-entry,
+.post-entry,
+.post-single,
+.page-header,
+.archive-posts,
+.terms-tags,
+.not-found {
+  background: #fff !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--hp-rule) !important;
+  border-radius: 0 !important;
+  padding: 16px 2px !important;
+  margin: 0 0 4px 0 !important;
+}
+/* kill PaperMod's full-height centered hero — HP pages were top-aligned */
+.first-entry {
+  display: block !important;
+  min-height: 0 !important;
+  justify-content: flex-start !important;
+  border-bottom: 2px solid var(--hp-blue) !important;
+}
+.first-entry .entry-header h1 {
+  font-family: var(--font-ui) !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: var(--hp-text) !important;
+}
+.post-entry:hover { background: #f6f8fc !important; }
+.post-entry .entry-header h2 {
+  font-family: var(--font-ui) !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  color: var(--hp-link) !important;
+}
+.post-entry:hover .entry-header h2 { text-decoration: underline; }
+.entry-hint, .entry-footer, .entry-content { color: #333; }
+
+/* =========================================================================
+   SINGLE POST
+   ========================================================================= */
+.post-single { border-bottom: 0 !important; }
+.post-single .post-header { border-bottom: 1px solid var(--hp-rule); padding-bottom: 8px; margin-bottom: 14px; }
+.post-single .post-title {
+  font-family: var(--font-ui) !important;
+  font-size: 26px !important;
+  font-weight: bold !important;
+  color: var(--hp-text) !important;
+  line-height: 1.2;
+}
+.post-meta, .post-single .post-meta {
+  font-family: var(--font-ui) !important;
+  font-size: 12px !important;
+  color: #666 !important;
+}
+
+.post-content {
+  font-family: var(--font-ui) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--hp-text) !important;
+}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 {
+  font-family: var(--font-ui) !important;
+  font-weight: bold !important;
+  color: var(--hp-text) !important;
+  margin-top: 1.3em;
+}
+.post-content h2 {
+  font-size: 19px !important;
+  border-bottom: 1px solid var(--hp-rule) !important;
+  padding-bottom: 3px;
+}
+.post-content h3 { font-size: 16px !important; color: var(--hp-maroon) !important; }
+.post-content a { color: var(--hp-link); text-decoration: underline; }
+.post-content a:visited { color: var(--hp-visited); }
+
+.post-content blockquote {
+  border-left: 4px solid var(--hp-blue) !important;
+  background: #f3f6fb !important;
+  padding: 8px 14px !important;
+  margin: 1.2em 0 !important;
+  font-style: normal;
+  color: #333;
+}
+
+/* 90s images had a thin hard border */
+.post-content img {
+  border: 1px solid #999 !important;
+  padding: 0;
+  border-radius: 0 !important;
+  margin: 1.2em 0 !important;
+}
+
+.post-content ul { list-style: disc; }
+.post-content ul li::marker { color: var(--hp-maroon); }
+
+/* code — plain light-gray terminal box, nothing fancy */
+.post-content code,
+.post-content pre,
+.post-content pre code,
+.post-content pre[style],
+body .post-content pre {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 13px !important;
+  background: #f0f0f0 !important;
+  color: #111 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 0 !important;
+}
+.post-content pre { padding: 12px !important; overflow-x: auto; }
+.post-content pre code { background: transparent !important; border: 0 !important; padding: 0 !important; }
+.post-content :not(pre) > code { padding: 1px 4px !important; color: var(--hp-maroon) !important; }
+
+/* diagrams in a thin-ruled white box */
+.post-content pre.mermaid, .post-content .mermaid {
+  background: #fff !important; color: #111 !important;
+  border: 1px solid var(--hp-rule) !important; padding: 12px !important; text-align: center;
+}
+.post-content .mermaid svg, .post-content figure svg { max-width: 100%; height: auto; }
+
+/* plain thin rule */
+hr, .post-content hr {
+  height: 0 !important; border: 0 !important;
+  border-top: 1px solid var(--hp-rule) !important;
+  background: none !important; margin: 1.4em 0 !important;
+}
+
+/* =========================================================================
+   TAGS + PAGINATION — small cream buttons with thin borders
+   ========================================================================= */
+.post-tags a, .terms-tags a {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--hp-blue) !important;
+  background: var(--hp-cream) !important;
+  border: 1px solid var(--hp-rule) !important;
+  padding: 2px 9px !important;
+  text-decoration: none;
+}
+.post-tags a:hover, .terms-tags a:hover { background: var(--hp-maroon) !important; color: #fff !important; }
+
+.pagination a, .paginav a, button, .button {
+  font-family: var(--font-ui) !important;
+  background: var(--hp-cream) !important;
+  border: 1px solid var(--hp-rule) !important;
+  color: var(--hp-blue) !important;
+  padding: 4px 12px !important;
+  text-decoration: none !important;
+}
+.pagination a:hover, .paginav a:hover { background: var(--hp-maroon) !important; color: #fff !important; }
+
+/* =========================================================================
+   FOOTER — dithered blue banner, white text
+   ========================================================================= */
+.footer {
+  background: var(--hp-blue-dk) url(/img/hp/footer.png) repeat-x !important;
+  background-size: auto 100% !important;
+  border: 0 !important;
+  color: #ffffff !important;
+  font-family: var(--font-ui) !important;
+  font-size: 12px !important;
+  text-align: center;
+  padding: 16px 10px !important;
+  margin-top: 18px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.footer a { color: #ffffff !important; text-decoration: underline; }
+
+/* =========================================================================
+   MOBILE
+   ========================================================================= */
+@media screen and (max-width: 768px) {
+  .main { padding: 0 10px !important; }
+  .logo a { font-size: 22px !important; }
+  .post-single .post-title { font-size: 21px !important; }
+  #menu a { padding: 6px 10px !important; }
+}
