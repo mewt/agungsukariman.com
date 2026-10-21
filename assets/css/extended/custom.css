@@ -1,376 +1,470 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap");
+/* =========================================================================
+   AGUNG'S CORNER OF THE WEB — est. 1996 (vibes)
+   GeoCities-maximalist retro skin for Hugo + PaperMod.
+   100% self-contained: system fonts + CSS + inline SVG, no external assets.
+   To switch back to the clean theme, replace this file's contents with
+   assets/css/extended/custom-clean-backup.css  (or `git revert`).
+   ========================================================================= */
 
+/* ---- web-safe font stacks (no web fonts — it's the 90s) ---------------- */
 :root {
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: "Merriweather", Georgia, serif;
-  
-  /* Clean minimal colors */
-  --bg-light: #ffffff;
-  --bg-light-gray: #f8f9fa;
-  --text-primary: #1a1a1a;
-  --text-secondary: #6b7280;
-  --text-muted: #9ca3af;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --border: #e5e7eb;
-  --border-light: #f3f4f6;
+  --font-fun:   "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+  --font-body:  "Times New Roman", Times, Georgia, serif;
+  --font-mono:  "Courier New", Courier, monospace;
+
+  /* web-safe neon palette */
+  --navy:   #000033;
+  --silver: #c0c0c0;
+  --silver-dk: #808080;
+  --lime:   #00ff00;
+  --cyan:   #00ffff;
+  --magenta:#ff00ff;
+  --yellow: #ffff00;
+  --red:    #ff0000;
+  --link:   #0000ee;
+  --visited:#551a8b;
 }
 
+/* =========================================================================
+   LOCK A SINGLE LOOK — ignore PaperMod's light/dark split entirely.
+   Every rule targets `body`, so even a stray .dark class still looks 90s.
+   ========================================================================= */
+
+html { scroll-behavior: auto; }
+
+body,
+body.dark,
 body:not(.dark) {
-  --theme: #f8f9fa;
-  --entry: #ffffff;
-  --primary: #1a1a1a;
-  --secondary: #6b7280;
-  --tertiary: #9ca3af;
-  --content: #374151;
-  --code-block-bg: #f8f9fa;
-  --code-bg: #f3f4f6;
-  --border: #e5e7eb;
+  /* tiled starfield on deep navy — generated with layered radial-gradients */
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(1px 1px at 20px 30px,  #fff, transparent),
+    radial-gradient(1px 1px at 70px 120px, #fff, transparent),
+    radial-gradient(2px 2px at 160px 60px, #9ad, transparent),
+    radial-gradient(1px 1px at 230px 180px,#fff, transparent),
+    radial-gradient(1px 1px at 300px 90px, #cde, transparent),
+    radial-gradient(2px 2px at 120px 220px,#fff, transparent);
+  background-size: 350px 260px;
+  background-repeat: repeat;
+  color: #000;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
 }
 
-body.dark {
-  --theme: #0f0f0f;
-  --entry: #1a1a1a;
-  --primary: #f3f4f6;
-  --secondary: #9ca3af;
-  --tertiary: #6b7280;
-  --content: #d1d5db;
-  --code-block-bg: #171717;
-  --code-bg: #262626;
-  --border: #404040;
-}
-
-/* BASE STYLES */
 body,
 button,
 input,
 select,
 textarea {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
 }
 
-body:not(.dark) {
-  background: var(--bg-light);
-  color: var(--text-primary);
+/* kill PaperMod niceties that read as "modern" */
+* { border-radius: 0 !important; box-shadow: none !important; }
+img { image-rendering: auto; }
+
+/* =========================================================================
+   TOP BANNER (marquee + under-construction) — injected via extend_head.html
+   ========================================================================= */
+#retro-topbar { width: 100%; }
+
+#retro-topbar marquee,
+#retro-topbar .retro-marquee {
+  display: block;
+  background: #000;
+  color: var(--lime);
+  font-family: var(--font-mono);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--lime);
+  letter-spacing: 1px;
+}
+#retro-topbar marquee .hot { color: var(--yellow); }
+#retro-topbar marquee .cold { color: var(--cyan); }
+
+.retro-construction {
+  text-align: center;
+  font-family: var(--font-fun);
+  font-weight: bold;
+  color: #000;
+  padding: 7px 4px;
+  /* animated hazard barber-pole */
+  background: repeating-linear-gradient(
+    45deg, #ffcc00 0, #ffcc00 20px, #000 20px, #000 40px);
+  background-size: 200% 100%;
+  animation: barber 1.2s linear infinite;
+  border-bottom: 3px solid #000;
+  text-shadow: 0 0 4px #fff, 1px 1px 0 #fff;
+}
+.retro-construction span {
+  background: #ffcc00;
+  padding: 2px 10px;
+  border: 2px outset #ffe680;
+}
+@keyframes barber { to { background-position: 200% 0; } }
+
+/* =========================================================================
+   MAIN COLUMN — a bordered "page" floating on the starfield
+   ========================================================================= */
+.main {
+  max-width: 820px !important;
+  margin: 18px auto !important;
+  padding: 0 !important;
 }
 
-body.dark {
-  background: var(--theme);
-  color: var(--primary);
+/* the whole content stack sits on a silver/white parchment */
+.main > * {
+  background: #ffffff;
 }
 
-/* SIMPLIFIED HEADER */
+/* =========================================================================
+   HEADER / NAV  (.nav .logo #menu)
+   ========================================================================= */
 .nav {
-  background: var(--entry);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.logo,
-.logo a {
+  background: var(--silver);
+  border: 4px outset #e8e8e8;
+  border-bottom: 4px outset #e8e8e8;
+  display: block;
+  padding: 10px 14px;
   text-align: center;
 }
 
+.logo, .logo a {
+  text-align: center;
+  float: none;
+}
+.logo a {
+  font-family: var(--font-fun) !important;
+  font-size: 30px !important;
+  font-weight: bold;
+  color: var(--magenta) !important;
+  text-shadow: 2px 2px 0 var(--cyan), 3px 3px 0 #000;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+}
+
+/* PaperMod's #menu IS the <ul> — make it the flex row */
 #menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px 24px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin: 10px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
-
+#menu li { list-style: none; margin: 0; }
 #menu a {
-  font-weight: 500;
-  color: var(--secondary);
-  transition: color 0.2s ease;
-}
-
-#menu a:hover {
-  color: var(--accent);
-}
-
-/* SIMPLE MAIN CONTENT */
-.main {
-  max-width: 720px;
-}
-
-/* FIRST ENTRY / HERO */
-.first-entry {
-  margin: 0 0 32px;
-  padding: 24px;
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-}
-
-.first-entry .entry-header h1 {
-  font-family: var(--font-sans);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-/* POST ENTRIES */
-.post-entry {
-  padding: 20px;
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.post-entry:hover {
-  border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.post-entry .entry-header h2 {
-  font-family: var(--font-sans);
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.post-entry:hover .entry-header h2 {
-  color: var(--accent);
-}
-
-/* POST SINGLE / ARTICLE */
-.post-single {
-  margin: 0 0 32px;
-  padding: 32px;
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-}
-
-.post-single .post-header {
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border);
-}
-
-.post-single .post-title {
-  font-family: var(--font-sans);
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1.2;
-}
-
-.post-single .post-meta {
+  display: inline-block;
+  font-family: var(--font-fun);
+  font-weight: bold;
   font-size: 14px;
-  color: var(--secondary);
+  color: var(--navy) !important;
+  background: linear-gradient(#fff, var(--silver));
+  border: 3px outset #e8e8e8;
+  padding: 4px 12px !important;
+  text-decoration: none;
+}
+#menu a:hover { color: var(--red) !important; background: var(--yellow); }
+#menu a:active { border-style: inset; }
+#menu .active { background: var(--yellow) !important; }
+
+/* hide PaperMod's theme toggle just in case it renders */
+#theme-toggle { display: none !important; }
+
+/* =========================================================================
+   LINKS — classic blue/purple/red
+   ========================================================================= */
+a { color: var(--link); text-decoration: underline; }
+a:visited { color: var(--visited); }
+a:active { color: var(--red); }
+
+/* =========================================================================
+   HOME HERO + POST LISTINGS
+   ========================================================================= */
+.first-entry,
+.post-entry,
+.post-single,
+.page-header,
+.archive-posts,
+.not-found,
+.search-wrapper,
+.terms-tags {
+  background: #ffffff !important;
+  border: 4px ridge var(--silver) !important;
+  border-radius: 0 !important;
+  padding: 18px 22px !important;
+  margin: 0 0 16px 0 !important;
 }
 
-/* POST CONTENT - CLEAN TYPOGRAPHY */
-.post-content {
-  font-family: var(--font-serif);
+.first-entry { text-align: center; }
+.first-entry .entry-header h1 {
+  font-family: var(--font-fun) !important;
+  font-size: 30px !important;
+  color: var(--red) !important;
+  text-shadow: 1px 1px 0 var(--yellow);
+}
+.first-entry .entry-content {
+  font-family: var(--font-body);
   font-size: 18px;
-  line-height: 1.8;
-  color: var(--content);
+  color: #000;
 }
 
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  color: var(--primary);
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.3;
+.post-entry { transition: none !important; }
+.post-entry:hover { background: #fffbe6 !important; border-color: var(--magenta) !important; }
+.post-entry .entry-header h2 {
+  font-family: var(--font-fun) !important;
+  font-size: 20px !important;
+  color: var(--link) !important;
 }
+.post-entry:hover .entry-header h2 { color: var(--red) !important; }
+.entry-hint, .entry-footer { font-family: var(--font-mono); color: var(--silver-dk); }
 
+/* a NEW! blinking flag next to the newest entry */
+.first-entry .entry-header h1::after,
+article:first-of-type .entry-header h2::after {
+  content: " NEW!";
+  color: var(--red);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  vertical-align: super;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.blink { animation: blink 1s steps(1) infinite; }
+
+/* =========================================================================
+   SINGLE POST
+   ========================================================================= */
+.post-single .post-header { border-bottom: 3px double var(--silver-dk); margin-bottom: 18px; padding-bottom: 12px; }
+.post-single .post-title {
+  font-family: var(--font-fun) !important;
+  font-size: 34px !important;
+  color: var(--navy) !important;
+  line-height: 1.2;
+  text-shadow: 2px 2px 0 var(--silver);
+}
+.post-single .post-meta,
+.post-meta { font-family: var(--font-mono) !important; font-size: 13px !important; color: var(--silver-dk) !important; }
+
+.post-content {
+  font-family: var(--font-body) !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #000 !important;
+}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 {
+  font-family: var(--font-fun) !important;
+  color: var(--navy) !important;
+  margin-top: 1.3em;
+}
 .post-content h2 {
-  font-size: 24px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
+  font-size: 23px !important;
+  color: var(--red) !important;
+  border-bottom: 3px solid var(--yellow) !important;
+  padding-bottom: 4px;
 }
-
-.post-content h3 {
-  font-size: 20px;
-}
-
-.post-content h4 {
-  font-size: 16px;
-}
-
-.post-content p {
-  margin-bottom: 1.25em;
-}
-
-.post-content a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.post-content a:hover {
-  color: var(--accent-hover);
-}
-
-/* CODE STYLING - Dark Mode (Catppuccin) */
-body.dark .post-content code,
-body.dark .post-content pre,
-body.dark .post-content pre code,
-body.dark .post-content pre[style] {
-  font-family: "JetBrains Mono", "Fira Code", monospace !important;
-  font-size: 14px !important;
-  background: #1e1e2e !important;
-  color: #cdd6f4 !important;
-  border: 1px solid #313244 !important;
-  border-radius: 8px;
-}
-
-body.dark .post-content pre {
-  padding: 16px;
-  overflow-x: auto;
-  margin: 1.5em 0;
-}
-
-/* CODE STYLING - Light Mode (GitHub-inspired) */
-body:not(.dark) .post-content code,
-body:not(.dark) .post-content pre,
-body:not(.dark) .post-content pre code,
-body:not(.dark) .post-content pre[style] {
-  font-family: "JetBrains Mono", "Fira Code", monospace !important;
-  font-size: 14px !important;
-  background: #f6f8fa !important;
-  color: #24292e !important;
-  border: 1px solid #e1e4e8 !important;
-  border-radius: 8px;
-}
-
-body:not(.dark) .post-content pre {
-  padding: 16px;
-  overflow-x: auto;
-  margin: 1.5em 0;
-}
-
-/* Syntax highlighting - dark */
-body.dark .post-content pre code {
-  background: transparent;
-  padding: 0;
-  color: inherit;
-}
-
-/* Syntax highlighting - light */
-body:not(.dark) .post-content pre code {
-  background: transparent;
-  padding: 0;
-  color: inherit;
-}
-
-/* Code highlighting tokens - dark */
-body.dark .post-content .code-line {
-  display: block;
-  padding: 0 12px;
-  border-left: 3px solid transparent;
-}
-
-body.dark .post-content .code-line:hover {
-  background: rgba(137, 137, 167, 0.1);
-  border-left-color: #89b4fa;
-}
-
-/* Code highlighting tokens - light */
-body:not(.dark) .post-content .code-line {
-  display: block;
-  padding: 0 12px;
-  border-left: 3px solid transparent;
-}
-
-body:not(.dark) .post-content .code-line:hover {
-  background: rgba(0, 0, 0, 0.05);
-  border-left-color: #0366d6;
-}
-
-/* Inline code - dark */
-body.dark .post-content :not(pre) > code {
-  background: #313244;
-  color: #f38ba8;
-}
-
-/* Inline code - light */
-body:not(.dark) .post-content :not(pre) > code {
-  background: #f6f8fa;
-  color: #d73a49;
-}
-
-/* Code blocks with language labels */
-.post-content pre[class*="language-"]::before,
-.post-content pre[class*="language-"]::before {
-  content: attr(data-lang);
-}
+.post-content h3 { font-size: 19px !important; color: var(--magenta) !important; }
+.post-content a { color: var(--link); text-decoration: underline; }
+.post-content a:visited { color: var(--visited); }
 
 .post-content blockquote {
-  border-left: 3px solid var(--accent);
-  background: var(--code-bg);
-  padding: 16px 20px;
-  margin: 1.5em 0;
+  border-left: 5px solid var(--magenta) !important;
+  background: #fff0ff !important;
   font-style: italic;
-}
-
-.post-content ul,
-.post-content ol {
-  padding-left: 1.5em;
-  margin-bottom: 1.25em;
-}
-
-.post-content li {
-  margin-bottom: 0.5em;
+  padding: 10px 16px !important;
 }
 
 .post-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 1.5em 0;
+  border: 4px ridge var(--silver) !important;
+  padding: 3px;
+  background: #fff;
+  border-radius: 0 !important;
 }
 
-/* TAGS */
-.post-tags a {
-  background: var(--code-bg);
-  color: var(--secondary);
+/* bullets with a retro feel */
+.post-content ul { list-style: square; }
+.post-content ul li::marker { color: var(--magenta); }
+
+/* =========================================================================
+   CODE — green-screen terminal
+   ========================================================================= */
+.post-content code,
+.post-content pre,
+.post-content pre code,
+.post-content pre[style],
+body .post-content code,
+body .post-content pre {
+  font-family: var(--font-mono) !important;
+  font-size: 14px !important;
+  background: #000 !important;
+  color: var(--lime) !important;
+  border: 3px inset #333 !important;
+  border-radius: 0 !important;
+}
+.post-content pre { padding: 14px !important; overflow-x: auto; }
+.post-content pre code { background: transparent !important; border: 0 !important; padding: 0 !important; color: inherit !important; }
+.post-content :not(pre) > code { padding: 1px 5px !important; color: var(--yellow) !important; }
+
+/* =========================================================================
+   DIAGRAMS — Mermaid + GoAT sit in a bordered parchment panel
+   ========================================================================= */
+.post-content pre.mermaid,
+.post-content .mermaid {
+  background: #fff !important;
+  color: #000 !important;
+  border: 4px ridge var(--silver) !important;
+  padding: 14px !important;
+  text-align: center;
+  overflow-x: auto;
+}
+/* GoAT emits an inline <svg>; keep its strokes dark on the white panel */
+.post-content figure svg,
+.post-content svg.goat,
+.post-content .mermaid svg { max-width: 100%; height: auto; }
+.post-content svg.goat { color: #000; }
+
+/* =========================================================================
+   DIVIDERS — rainbow rule
+   ========================================================================= */
+hr, .post-content hr {
+  height: 6px !important;
+  border: 0 !important;
+  background: linear-gradient(90deg,
+    var(--red), var(--yellow), var(--lime), var(--cyan), var(--link), var(--magenta), var(--red));
+  background-size: 200% 100%;
+  animation: rainbow 4s linear infinite;
+  margin: 1.6em 0 !important;
+}
+@keyframes rainbow { to { background-position: 200% 0; } }
+
+/* =========================================================================
+   TAGS
+   ========================================================================= */
+.post-tags a, .terms-tags a {
+  display: inline-block;
+  font-family: var(--font-mono);
   font-size: 13px;
-  padding: 4px 12px;
-  border-radius: 4px;
-  transition: all 0.2s ease;
+  color: var(--navy) !important;
+  background: linear-gradient(#fff, var(--silver)) !important;
+  border: 3px outset #e8e8e8 !important;
+  padding: 2px 10px !important;
+  text-decoration: none;
 }
+.post-tags a:hover, .terms-tags a:hover { background: var(--yellow) !important; color: var(--red) !important; }
 
-.post-tags a:hover {
-  background: var(--accent);
-  color: #fff;
+/* pagination / buttons */
+.pagination a, .page-link, .button, button, .paginav a {
+  font-family: var(--font-fun) !important;
+  background: linear-gradient(#fff, var(--silver)) !important;
+  border: 3px outset #e8e8e8 !important;
+  color: var(--navy) !important;
+  padding: 4px 14px !important;
+  text-decoration: none !important;
 }
+.pagination a:active, .paginav a:active { border-style: inset !important; }
 
-/* FOOTER */
+/* =========================================================================
+   RETRO FOOTER (visitor counter + 88x31 badges) — from extend_footer.html
+   ========================================================================= */
 .footer {
-  padding: 24px 0;
-  border-top: 1px solid var(--border);
-  font-size: 14px;
-  color: var(--secondary);
+  background: var(--silver) !important;
+  border: 4px outset #e8e8e8 !important;
+  color: #000 !important;
+  font-family: var(--font-mono) !important;
+  font-size: 13px !important;
+  text-align: center;
+  padding: 14px !important;
+  margin-top: 16px;
+}
+.footer a { color: var(--link) !important; }
+
+#retro-footer {
+  max-width: 820px;
+  margin: 0 auto 18px;
+  background: var(--silver);
+  border: 4px outset #e8e8e8;
+  padding: 16px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #000;
+}
+#retro-footer .retro-sign {
+  font-family: var(--font-fun);
+  font-size: 15px;
+  color: var(--navy);
+  margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
+/* LED visitor counter */
+.retro-counter-wrap { margin: 8px 0 14px; }
+.retro-counter-label { display: block; margin-bottom: 4px; }
+#retro-counter {
+  display: inline-block;
+  background: #000;
+  color: var(--lime);
+  font-family: var(--font-mono);
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 6px;
+  padding: 4px 10px;
+  border: 3px inset #333;
+  text-shadow: 0 0 6px var(--lime);
+}
+
+/* 88x31 badge row */
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.badge88 {
+  width: 88px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 1.05;
+  letter-spacing: 0;
+  border: 2px outset #bbb;
+  text-decoration: none !important;
+  overflow: hidden;
+  padding: 1px;
+}
+.badge88.b-netscape { background: #000; color: var(--lime); }
+.badge88.b-notepad  { background: #fff; color: #000; }
+.badge88.b-html     { background: var(--link); color: #fff; }
+.badge88.b-res      { background: #000; color: var(--yellow); }
+.badge88.b-y2k      { background: var(--red); color: #fff; }
+.badge88.b-email    { background: var(--magenta); color: #fff; }
+
+/* =========================================================================
+   MOBILE — keep it usable at phone width
+   ========================================================================= */
 @media screen and (max-width: 768px) {
-  .main {
-    padding: 0 16px;
-  }
-  
-  .first-entry,
-  .post-single {
-    padding: 20px;
-  }
-  
-  .post-single .post-title {
-    font-size: 28px;
-  }
-  
-  .post-content {
-    font-size: 16px;
-  }
+  body { font-size: 16px; }
+  .main { margin: 10px auto !important; }
+  .first-entry, .post-entry, .post-single,
+  .page-header, .terms-tags { padding: 14px !important; }
+  .post-single .post-title { font-size: 26px !important; }
+  .logo a { font-size: 24px !important; }
+  .post-content { font-size: 16px !important; }
+  #retro-counter { font-size: 20px; letter-spacing: 4px; }
+}
+
+/* respect reduced-motion — pause the loud animations */
+@media (prefers-reduced-motion: reduce) {
+  .retro-construction, hr, .post-content hr,
+  .first-entry .entry-header h1::after,
+  article:first-of-type .entry-header h2::after,
+  .blink { animation: none !important; }
 }

@@ -1,0 +1,7 @@
+{{- /* Mermaid diagram render hook: ```mermaid fenced blocks become
+       <pre class="mermaid">. The loader in extend_footer.html then detects
+       this element client-side and initializes Mermaid.
+       GoAT (```goat) is handled by Hugo's built-in hook, no file needed. */ -}}
+<pre class="mermaid">
+{{- .Inner | htmlEscape | safeHTML -}}
+</pre>

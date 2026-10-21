@@ -1,0 +1,21 @@
+{{- /* 90s retro top banner — marquee + under-construction. Injected at the
+       very top of <body> on load so it pushes content down naturally.
+       JS is passed through safeJS so Hugo's autoescaper leaves the markup
+       strings (</marquee> etc.) alone. Theme partial is left untouched. */ -}}
+<script>
+{{ `document.addEventListener('DOMContentLoaded', function () {
+  if (document.getElementById('retro-topbar')) return;
+  var bar = document.createElement('div');
+  bar.id = 'retro-topbar';
+  bar.innerHTML =
+    '<marquee scrollamount="6" behavior="scroll" direction="left">' +
+      '<span class="hot">★★★</span> WELCOME TO AGUNG&#39;S CORNER OF THE WEB! ' +
+      '<span class="cold">Best viewed in Netscape Navigator 4.0 at 1024×768</span> ' +
+      '· Sign my guestbook! · ' +
+      '<span class="hot">This page is 100% hand-coded (sort of)</span> ' +
+      '★★★ Thanks for surfing by! ★★★' +
+    '<\/marquee>' +
+    '<div class="retro-construction"><span>🚧 This site is UNDER CONSTRUCTION — pardon our dust! 🚧<\/span><\/div>';
+  document.body.insertBefore(bar, document.body.firstChild);
+});` | safeJS }}
+</script>
